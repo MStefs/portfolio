@@ -28,7 +28,8 @@ const pageVariants = {
   }
 };
 
-const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';
+// const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // Old way
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID; // New: Read from env
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -74,18 +75,25 @@ export default function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/images/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${GA_MEASUREMENT_ID}');
-        `}
-      </Script>
+      
+      {/* Conditionally load Google Analytics scripts */}
+      {GA_MEASUREMENT_ID && GA_MEASUREMENT_ID !== 'G-XXXXXXXXXX' && (
+        <>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_MEASUREMENT_ID}');
+            `}
+          </Script>
+        </>
+      )}
+
       <motion.div
         key={router.route}
         initial="hidden"
