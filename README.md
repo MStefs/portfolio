@@ -1,8 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# UX Portfolio - Miltiadis Stefanidis
+
+This repository contains the source code for the UX Portfolio of Miltiadis Stefanidis, a Quantitative Researcher and Data Analyst specializing in UX and Machine Learning. The portfolio showcases various projects and coding work.
+
+Built with [Next.js](https://nextjs.org/), [React](https://react.dev/), and [Tailwind CSS](https://tailwindcss.com/).
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+*   Node.js (LTS version recommended, e.g., v18.x or v20.x)
+*   npm, yarn, or pnpm (comes with Node.js or can be installed separately)
+
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/MStefs/portfolio.git
+    cd ux-portfolio_2
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    # or
+    # yarn install
+    # or
+    # pnpm install
+    ```
+
+### Running the Development Server
+
+To start the development server:
 
 ```bash
 npm run dev
@@ -10,31 +37,60 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. The page auto-updates as you edit files.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Building for Production
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+To create an optimized production build:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This will create a `.next` folder with the production build of your application.
 
-## Learn More
+## Running the Production Server
 
-To learn more about Next.js, take a look at the following resources:
+After building, you can start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+```bash
+npm run start
+# or
+yarn start
+# or
+pnpm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Linting
 
-## Deploy on Vercel
+To run the linter and check for code quality issues:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run lint
+# or
+yarn lint
+# or
+pnpm lint
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## Tech Stack
+
+*   **Framework:** [Next.js](https://nextjs.org/) (^15.2.0)
+*   **UI Library:** [React](https://react.dev/) (^19.0.0)
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/) (^3.4.1)
+*   **Animations:** [Framer Motion](https://www.framer.com/motion/) (^12.4.0)
+*   **Markdown Processing:** [Marked](https://marked.js.org/) (^15.0.6), [Gray Matter](https://github.com/jonschlinkert/gray-matter) (^4.0.3)
+*   **Icons:** [React Icons](https://react-icons.github.io/react-icons/) (^5.4.0)
+*   **Syntax Highlighting:** [React Syntax Highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter) (^15.6.1)
+
+## Deployment
+
+The easiest way to deploy a Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme), from the creators of Next.js.
+
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details on deploying to other platforms.

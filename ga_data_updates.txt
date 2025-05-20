@@ -1,0 +1,1 @@
+Please update ga_data.js to replace all revenue and conversion metrics with behavioral data from dashboards (50.03% click events, 32.6min sessions, etc)
