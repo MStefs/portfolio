@@ -230,7 +230,7 @@ function ImageGallery({ images }) {
         
         {/* Bullet points under the header - modal-like style */}
         {currentImage.points && currentImage.points.length > 0 && (
-          <div className="p-3 bg-gray-50 border-b">
+          <div className="p-3 bg-gray-50 border-b min-h-32"> {/* Added min-h-32 */}
             <div className="flex flex-row flex-wrap justify-center gap-2">
               {currentImage.points.map((point, idx) => {
                 // Use icons for bullet points
@@ -269,7 +269,7 @@ function ImageGallery({ images }) {
           {/* Left arrow */}
           <motion.button 
             onClick={prevImage}
-            className="flex-shrink-0 p-1 text-indigo-700 hover:text-indigo-900 focus:outline-none z-10"
+            className="flex-shrink-0 self-center p-1 text-indigo-700 hover:text-indigo-900 focus:outline-none z-10"
             aria-label="Previous image"
             animate={{ x: [0, -3, 0] }}
             transition={{ repeat: Infinity, duration: 1.5, repeatType: "reverse" }}
@@ -278,7 +278,7 @@ function ImageGallery({ images }) {
           </motion.button>
           
           {/* Image container - larger size */}
-          <div className="relative bg-white overflow-hidden flex-grow">
+          <div className="relative bg-white overflow-hidden w-full h-[60vh] flex items-center justify-center">
             {/* Enhance button - moved to top right */}
             <button 
               onClick={openModal}
@@ -289,15 +289,15 @@ function ImageGallery({ images }) {
             </button>
             
             {/* Image container - increased height */}
-            <div className={`relative ${isZoomed ? "cursor-zoom-out" : "cursor-zoom-in"}`} onClick={toggleZoom}>
-              <div className={`transition-transform duration-300 ${isZoomed ? "scale-125" : "scale-100"}`}>
+            <div className={`relative w-full h-full flex items-center justify-center ${isZoomed ? "cursor-zoom-out" : "cursor-zoom-in"}`} onClick={toggleZoom}>
+              <div className={`transition-transform duration-300 w-full h-full flex items-center justify-center ${isZoomed ? "scale-125" : "scale-100"}`}>
                 <Image 
                   src={currentImage.src} 
                   alt={currentImage.caption || ""}
                   width={1200}
                   height={800}
-                  className="w-full object-contain"
-                  style={{ height: "60vh", objectFit: "contain" }} // Larger image height
+                  className="object-contain max-w-full max-h-full"
+                  priority={currentIndex === 0} // Prioritize first image
                 />
               </div>
             </div>
@@ -306,7 +306,7 @@ function ImageGallery({ images }) {
           {/* Right arrow */}
           <motion.button 
             onClick={nextImage}
-            className="flex-shrink-0 p-1 text-indigo-700 hover:text-indigo-900 focus:outline-none z-10"
+            className="flex-shrink-0 self-center p-1 text-indigo-700 hover:text-indigo-900 focus:outline-none z-10"
             aria-label="Next image"
             animate={{ x: [0, 3, 0] }}
             transition={{ repeat: Infinity, duration: 1.5, repeatType: "reverse" }}
