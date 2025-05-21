@@ -57,8 +57,8 @@ const bulletIcons = [
 
 /* --- GOOGLE ANALYTICS PROJECT DETAILS --- */
 const projectDetails = {
-  title: "Google Analytics / Platform Data Log Sequence Analysis",
-  subtitle: "Bridging Platform Data and GA data to drive product improvements",
+  title: "GA / Platform Data Log Sequence Analysis",
+  subtitle: "Bridging Platform Data and Google Analytics data to drive product improvements",
   overview: `
     This quantitative UX research initiative integrated Google Analytics (GA) session data with Platform Data events for a unified view of user behavior. Through behavioral data modeling, user path analysis, and custom engagement metrics, we achieved significant outcomes: user engagement scores increased by **~11% (Q4)**, and the proportion of returning daily active users grew by **~34 percentage points** (from ~28% to ~62%), indicating enhanced retention. The platform demonstrated strong user stickiness with an **~80% WAU/MAU ratio**. Furthermore, integrating data into actionable dashboards saved analysts **10+ hours weekly** in manual reporting. These insights, including identification of the main dashboard as a key Platform Data hub and dominant user interaction patterns (clicks, views, scrolls), directly informed UX improvements and product strategy.
   `,
