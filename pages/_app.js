@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import Head from 'next/head';
 import Script from 'next/script';
 import "../styles/globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 // Smooth page transition variants
 const pageVariants = {
@@ -103,6 +104,7 @@ export default function MyApp({ Component, pageProps }) {
       >
         <Component {...pageProps} />
       </motion.div>
+      <Analytics />
     </AnimatePresence>
   );
 }
