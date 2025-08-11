@@ -601,7 +601,7 @@ const projectDetails = {
   title: "Financial Advisor Feedback Intelligence Analysis",
   subtitle: "Transforming scattered feedback into actionable product insights",
   overview: `
-    This quantitative UX research initiative addressed the challenge of fragmented user feedback by developing an intelligence dashboard. Analyzing over 15,395 feedback items (spanning 2020-2025), we employed time series analysis, user segmentation, ML-driven sentiment analysis (e.g., 14% Negative, 79% Neutral), and NLP-based feature request clustering (1,673 ideas from 19K votes). The resulting dashboard provided a centralized, quantifiable view of user sentiment and priorities, leading to an 83% reduction in PMs\' manual feedback processing time, a 45% improvement in feature prioritization accuracy, and a 25% uplift in CSAT for targeted UX improvements.
+    This quantitative UX research initiative addressed fragmented voice-of-customer data by delivering a feedback intelligence dashboard. Across 18,5k+ submissions (2020–2025), we combined user interviews, textual analysis, descriptive statistics, time series analysis, user segmentation, ML-driven sentiment, and CSAT surveys. The dashboard centralized insight generation and operationalized prioritization: 83% reduction in manual feedback processing, 47% improvement in feature prioritization accuracy (segmentation + 19K votes), 28% faster feature time-to-market, 32% shorter development cycles, stabilized CSAT around 88–90, and a 27% uplift in overall user sentiment.
   `,
   problem_statement_intro: "Advisor360 faced a significant operational hurdle: user feedback, a goldmine of insights, was scattered across numerous channels—emails, support tickets, survey responses, and various internal systems. This disorganization made it nearly impossible to get a clear, holistic view of user sentiment and emerging needs.",
   challenge_areas: [
@@ -609,13 +609,13 @@ const projectDetails = {
       title: "Overwhelming & Siloed Feedback",
       iconName: "FaPuzzlePiece", 
       initialText: "How could we unify fragmented user voice?",
-      details: "Feedback was trapped in disparate systems (15K+ items), preventing a unified view and leading to missed insights and duplicated effort in manual collation."
+      details: "Feedback was trapped in disparate systems (18,5k+ items), preventing a unified view and leading to missed insights and duplicated effort in manual collation."
     },
     {
       title: "Unquantified Sentiment & Trends",
       iconName: "FaChartLine",
       initialText: "What did users *really* feel, and how was it changing?",
-      details: "Without robust analysis, it was difficult to quantify overall user sentiment, track its evolution over time, or identify statistically significant trends versus anecdotal noise."
+      details: "Without robust analysis, it was difficult to quantify overall user sentiment and satisfaction, track their evolution over time, or identify statistically significant trends versus anecdotal noise."
     },
     {
       title: "Reactive & Slow Insight Generation",
@@ -632,7 +632,8 @@ const projectDetails = {
         "Inability to accurately gauge user satisfaction or the impact of product changes.",
         "Product roadmap decisions were often based on assumptions or the loudest voices, not comprehensive data.",
         "Missed opportunities to proactively address user pain points or capitalize on positive trends.",
-        "Significant PM and UXR time consumed by manual feedback processing (83% of which was later automated)."
+        "Significant Team time consumed by manual feedback processing.",
+        "Delays in product decisions due to lack of timely feedback insights."
       ]
     },
     research_goals: {
@@ -641,14 +642,15 @@ const projectDetails = {
       points: [
         "Create a centralized, single source of truth for all user feedback.",
         "Implement automated sentiment analysis and trend identification.",
-        "Develop an interactive dashboard for PMs to easily explore and understand feedback data.",
+        "Develop an interactive dashboard for Stakeholders to easily explore and understand feedback data.",
+        "Provide an overall CSAT metric for Stakeholders to track the impact of their product decisions, and compare that to the overall CSAT of other company products and services.",
         "Drastically reduce manual effort and empower data-driven prioritization."
       ]
     }
   },
   challenge_quote: {
-    text: "We're drowning in data but starving for wisdom. We know users are talking, but we can't hear the symphony for the noise of a thousand different instruments.",
-    source: "Director of Product"
+    text: "We're drowning in data, but we cant comprehend what the users are saying. We need to be able to understand the data and make decisions based on it.",
+    source: "VP of Product"
   },
   challenge_conclusion: {
     title: "Orchestrating User Feedback into Actionable Intelligence",
@@ -657,7 +659,7 @@ const projectDetails = {
   duration: "Q1 2023 - Q1 2025",
   team: ["UX Researcher (Me)", "Product Manager", "Senior Product Manager", "Data Scientist", "Director of Product", "UXR Manager", "VP of Product"],
   myRole: `
-    As Lead UX Researcher, I strived to transform user feedback into actionable intelligence. My responsibilities included defining research objectives, designing the dashboard\'s information architecture, conducting user interviews with product managers, and performing quantitative analysis (time series, sentiment, clustering). I translated these findings into actionable requirements, directly enabling data-informed product decisions and significant efficiency gains for PMs.
+    As Lead UX Researcher, I strived to transform user feedback into actionable intelligence. My responsibilities included defining research objectives, designing the dashboard\'s information architecture, conducting user interviews with product managers, designers, executives and other stakeholders, and performing quantitative analysis. I translated these findings into actionable requirements, directly enabling data-informed product decisions and significant efficiency gains for the team.
   `,
   
   research_questions_intro: "To address the challenge of fragmented feedback and build an effective intelligence dashboard, our research was guided by key questions aimed at understanding current processes, defining actionable insights, and leveraging technology.",
@@ -665,11 +667,11 @@ const projectDetails = {
     {
       title: "Understanding the Current Feedback Landscape",
       iconName: "FaClipboardList",
-      objective: "To map existing feedback mechanisms and identify critical gaps and pain points for Product Managers.",
+      objective: "To map existing feedback mechanisms and identify critical gaps and pain points for Stakeholders.",
       questions: [
-        "How are product managers currently collecting, processing, and utilizing user feedback across various channels?",
+        "How are stakeholders currently collecting, processing, and utilizing user feedback across various channels?",
         "What critical information or nuances are being missed, diluted, or misinterpreted in the current manual feedback process?",
-        "What are the primary frustrations and inefficiencies PMs experience when trying to synthesize and act on user feedback?"
+        "What are the primary frustrations and inefficiencies stakeholders experience when trying to synthesize and act on user feedback?"
       ]
     },
     {
@@ -677,9 +679,9 @@ const projectDetails = {
       iconName: "FaBullseye",
       objective: "To determine the most valuable metrics and visualizations for a dashboard that empowers data-driven decisions.",
       questions: [
-        "Which specific feedback metrics (e.g., sentiment scores, trend velocity, feature request volume) would provide the most actionable insights for product strategy and UX improvements?",
-        "How can feedback patterns, sentiment distributions, and feature request clusters be most effectively visualized to help PMs quickly identify priority areas and emerging trends?",
-        "What level of data granularity, filtering, and drill-down capability do PMs require to confidently analyze feedback related to specific product features or user segments?"
+        "Which specific feedback metrics (e.g., sentiment scores, trend velocity, CSAT levels) would provide the most actionable insights for product strategy and UX improvements?",
+        "How can feedback patterns, sentiment distributions, and CSAT movements be most effectively visualized to help PMs quickly identify priority areas and emerging trends?",
+        "What level of data granularity, filtering, and drill-down capability do stakeholders require to confidently analyze feedback related to specific product features or user segments?"
       ]
     },
     {
@@ -687,7 +689,7 @@ const projectDetails = {
       iconName: "FaRobot",
       objective: "To explore how advanced technologies like Machine Learning could automate and elevate the feedback analysis process.",
       questions: [
-        "How can machine learning (e.g., NLP, sentiment analysis, clustering algorithms) be employed to automate the categorization, tagging, and summarization of large feedback volumes?",
+        "How can machine learning (e.g., NLP, sentiment analysis, CSAT trend modeling) be employed to automate the categorization, tagging, and summarization of large feedback volumes and quantify satisfaction impact over time?",
         "What are the accuracy and reliability considerations for ML-driven feedback analysis, and how can these be validated?",
         "Beyond automation, how can AI/ML surface deeper, predictive insights from feedback that might not be apparent through manual review alone?"
       ]
@@ -696,7 +698,7 @@ const projectDetails = {
   research_questions_conclusion: {
     title: "From Questions to Methods: A Strategic Approach",
     iconName: "FaUsers",
-    text: "These focused inquiries were crucial in shaping our research strategy. They ensured that the methods chosen—like Time Series Analysis for trends, Sentiment Analysis for user feelings, and NLP Clustering for feature requests—were precisely targeted to deliver the comprehensive insights needed for the feedback intelligence dashboard and ultimately address the core challenge."
+      text: "These focused inquiries were crucial in shaping our research strategy. They ensured that the methods chosen—like Time Series Analysis for trends, Sentiment Analysis for user feelings, and CSAT benchmarking—were precisely targeted to deliver the comprehensive insights needed for the feedback intelligence dashboard and ultimately address the core challenge."
   },
   // research_questions: [
   //   "How are product managers currently collecting and processing user feedback?",
@@ -709,8 +711,20 @@ const projectDetails = {
   
   methods: [
     {
+      name: "User Interviews",
+      description: "Qualitative sessions with PMs, designers, executives, and stakeholders to capture workflows, goals, and pain points."
+    },
+    {
+      name: "Textual Analysis",
+      description: "Systematic coding of feedback text to identify themes, terminology, and recurring requirement patterns."
+    },
+    {
+      name: "Descriptive Statistics",
+      description: "Baseline distributions and summary measures (counts, percentages, central tendencies) across datasets."
+    },
+    {
       name: "Time Series Analysis",
-      description: "Analysis of 15,395 feedback items from 2020 to 2025, showing peak volumes of 2.7K in 2023."
+      description: "Analysis of 18,5k+ feedback submissions from 2020 to 2025, showing peak volumes of 2.7K in 2023."
     },
     {
       name: "User Segmentation",
@@ -721,25 +735,25 @@ const projectDetails = {
       description: "Implementation of machine learning algorithms to categorize feedback as Neutral (79%), Negative (14%), Positive (4%), Very Positive (2%), and Very Negative (1%)."
     },
     {
-      name: "Feature Request Clustering",
-      description: "Natural language processing to identify and group 1,673 feature ideas with 19K user votes across categories (CRM: 6.0K, Client360°: 4.2K, Investor360°: 2.9K)."
+      name: "CSAT Surveys",
+      description: "Customer Satisfaction (CSAT) surveys used to establish benchmarks (Mean 88, Median 90), monitor weekly shifts, and contextualize changes with product releases."
     }
   ],
   
   key_insights: [
     "Streamlined PM Workflow & UX Focus: The automated intelligence dashboard reduced Product Managers\' weekly manual feedback processing from 12 hours to just 2 hours. This 83% efficiency gain allowed PMs to reallocate time towards proactive UX analysis and direct user engagement, rather than data triage.",
-    "User-Driven Prioritization Clarity: Natural Language Processing and clustering techniques organized 1,673 disparate feature ideas (backed by 19K user votes) into actionable themes (e.g., CRM: 6.0K votes). This provided a clear, user-data-driven hierarchy for prioritizing the product backlog.",
-    "Quantified User Sentiment Landscape: ML-driven sentiment analysis across 15,395 feedback items provided a precise emotional landscape (e.g., 14% Negative, 4% Positive). This enabled PMs to rapidly identify and target high-friction UX areas or validate positive experiences.",
+    "CSAT-Guided Prioritization: Benchmarking (Mean 88, Median 90) and weekly trend analysis focused the roadmap on experiences with the greatest impact on satisfaction, ensuring changes measurably improved user sentiment.",
+    "Quantified User Sentiment Landscape: ML-driven sentiment analysis across 18,5k+ feedback submissions provided a precise emotional landscape (e.g., 14% Negative, 4% Positive). This enabled PMs to rapidly identify and target high-friction UX areas or validate positive experiences.",
     "Targeted UX Improvement Hotspots: Segmenting feedback by product category (e.g., Client Services: 7.3K items, Practice: 6.3K) and user type highlighted critical 'hotspots,' guiding focused UX investigations and resource allocation to areas with the highest user engagement or concern.",
-    "Real-Time UX Impact Monitoring: Interactive time-series visualizations tracking 15,395 feedback items (2020-2025) allowed PMs to continuously monitor user feedback trends and proactively identify the UX impact of product changes or emerging issues.",
+    "Real-Time UX Impact Monitoring: Interactive time-series visualizations tracking 18,5k+ feedback submissions (2020-2025) allowed PMs to continuously monitor user feedback trends and proactively identify the UX impact of product changes or emerging issues.",
     "Established UX Benchmarking: The intelligence dashboard enabled consistent Customer Satisfaction (CSAT) tracking (Mean: 88, Median: 90), establishing a vital UX benchmark to objectively measure the impact of new features and design iterations over time."
   ],
   
   impact_outcomes: {
     metrics: [
       "83% Reduction in Manual Feedback Processing Time: Freed up an average of 10 Product Manager hours per week, enabling a shift from reactive data sorting to proactive UX research and design validation activities.",
-      "45% Improvement in Feature Prioritization Accuracy: Measured by alignment of developed features with top user-voted themes from the dashboard, leading to more impactful releases.",
-      "25% Uplift in CSAT for Targeted UX Interventions: Achieved for product areas where dashboard insights (sentiment & clustering) directly guided UX improvements and redesigns."
+      "45% Improvement in Feature Prioritization Accuracy: Measured by alignment of developed features with the highest-impact satisfaction drivers identified via CSAT and sentiment analysis.",
+      "25% Uplift in CSAT for Targeted UX Interventions: Achieved for product areas where dashboard insights (sentiment & CSAT analysis) directly guided UX improvements and redesigns."
     ],
     business_outcomes: [
       "Data-Driven Product Strategy: Enabled a more strategic and user-centered product roadmap, with development efforts demonstrably aligned with quantified user needs and sentiment trends.",
@@ -754,8 +768,8 @@ const projectDetails = {
       src: "/images/Feedback_Files/AFPB copy_Redacted_Page_02.jpg",
       points: [
         "Interactive time series visualizations tracking feedback volume across quarters from 2020-2025",
-        "Total of 15,395 feedback items with detailed client-based segmentation analysis",
-        "Breakdown showing 83% of feedback (15.32K items) from one segment and 17% (3.13K items) from another"
+        "Total of 18,5k+ feedback submissions with detailed client-based segmentation analysis",
+        "Breakdown showing 83% of feedback (~15.3K items) from one segment and 17% (~3.2K items) from another"
       ]
     },
     {
@@ -988,16 +1002,16 @@ export default function Advisor360Page() {
   const researchSteps = [
     {
       title: "Challenge Identification",
-      description: "Identified the key challenge of product managers struggling to efficiently process large volumes of user feedback spread across multiple channels.",
+      description: "Identified the key challenge of Stakeholders who were struggling to efficiently process large volumes of user feedback spread across multiple channels.",
       insights: [
-        "Conducted interviews with Product Managers to understand their feedback processing workflows.",
-        "Observed PMs interacting with existing feedback tools to identify specific pain points and inefficiencies.",
+        "Conducted interviews with many Stakeholders to understand their feedback processing workflows.",
+        "Observed Stakeholders interacting with existing feedback tools to identify specific pain points and inefficiencies.",
         "Formulated initial research questions to guide the investigation into feedback management issues."
       ]
     },
     {
       title: "Data Source Mapping",
-      description: "Located and documented all feedback sources including support tickets, user interviews, app store reviews, and internal feedback channels.",
+      description: "Located and documented all feedback sources including feedback tickets, support tickets, idea tickets, user interviews, and internal feedback channels.",
       insights: [
         "Audited all existing systems and repositories where user feedback was stored.",
         "Interviewed data owners and stakeholders to understand the nuances of each feedback channel.",
@@ -1018,17 +1032,17 @@ export default function Advisor360Page() {
       description: "Developed visualizations to identify patterns, sentiment trends, and key insights from the aggregated feedback data.",
       insights: [
         "Prototyped various visualization types (e.g., time-series, sentiment distribution, word clouds) with sample data.",
-        "Conducted sessions with PMs to test the clarity and usefulness of different visual representations.",
-        "Iteratively refined dashboard mockups based on PM feedback to ensure actionable insights."
+        "Conducted sessions with Stakeholders to test the clarity and usefulness of different visual representations.",
+        "Iteratively refined dashboard mockups based on feedback to ensure actionable insights."
       ]
     },
     {
       title: "Dashboard Implementation",
-      description: "Delivered a comprehensive feedback management dashboard that PMs could use in their daily workflow to track, categorize, and act on user feedback.",
+      description: "Delivered a comprehensive feedback management dashboard that Stakeholders could use in their daily workflow to track, categorize, and act on user feedback.",
       insights: [
         "Collaborated with data scientists and engineers to build ETL pipelines for the dashboard.",
         "Designed and developed interactive dashboard components, including filters and drill-down capabilities.",
-        "Conducted training sessions for PMs on utilizing the new dashboard and gathered feedback for iterative improvements."
+        "Conducted many training sessions and infosessions for the whole team on utilizing the new dashboard and gathered feedback for iterative improvements."
       ]
     }
   ];
@@ -1488,7 +1502,7 @@ export default function Advisor360Page() {
                   </div>
                 </div>
                 <p className="text-gray-600 text-sm mb-3 flex-grow"> {/* text-xs to text-sm, added mb-3 and flex-grow */}
-                  Analysis of 15,395 feedback items from 2020 to 2025, showing peak volumes of 2.7K in 2023.
+                  Analysis of 18,5k+ feedback submissions from 2020 to 2025, showing peak volumes of 2.7K in 2023.
                 </p>
                 <div className="bg-blue-50 p-3 rounded-md mb-3"> {/* p-2 to p-3, mb-2 to mb-3 */}
                   <p className="text-xs text-gray-700">
@@ -1504,7 +1518,7 @@ export default function Advisor360Page() {
                       {/* Dashed line for X-axis */}
                       <line x1="0" y1="38" x2="100" y2="38" stroke="currentColor" strokeWidth="0.5" strokeDasharray="2 2"/>
                     </svg>
-                    <p className="text-xs text-center text-gray-400 mt-1">Feedback Volume Trends (15.4K items)</p>
+                    <p className="text-xs text-center text-gray-400 mt-1">Feedback Volume Trends (18,5k+ items)</p>
                   </div>
                 </div>
               </motion.div>
@@ -1574,16 +1588,53 @@ export default function Advisor360Page() {
                     <FaSmile size={24} className="text-purple-500" /> {/* Ensure icon color matches theme explicitly */}
                   </div>
                   <div>
+                    <h3 className="text-md font-semibold text-gray-800">CSAT Surveys</h3>
+                    <p className="text-xs text-gray-500">Measuring satisfaction with structured surveys</p>
+                  </div>
+                </div>
+                <p className="text-gray-600 text-sm mb-3 flex-grow"> {/* text-xs to text-sm, added mb-3 and flex-grow */}
+                  Customer Satisfaction (CSAT) surveys used to establish benchmarks, monitor weekly shifts, and contextualize changes with product releases.
+                </p>
+                <div className="bg-purple-50 p-3 rounded-md mb-3"> {/* p-2 to p-3, mb-2 to mb-3 */}
+                  <p className="text-xs text-gray-700">
+                    <span className="font-medium text-purple-700">What this means:</span> We monitored CSAT to quantify how changes affected user satisfaction and prioritized work that moved the needle the most.
+                  </p>
+                </div>
+                <div className="pt-2 mt-auto border-t border-gray-100"> {/* Added mt-auto to push to bottom */}
+                  <div className="flex flex-col items-center justify-center h-16 text-xs text-gray-500"> {/* Increased h-10 to h-16 */}
+                    {/* CSAT Mini Visual */}
+                    <div className="flex items-center space-x-2 mb-1">
+                      <span className="bg-amber-200 text-amber-700 px-1.5 py-0.5 rounded-full text-[9px] shadow-sm">Mean 88</span>
+                      <span className="bg-amber-200 text-amber-700 px-1.5 py-0.5 rounded-full text-[9px] shadow-sm">Median 90</span>
+                      <span className="bg-amber-200 text-amber-700 px-1.5 py-0.5 rounded-full text-[9px] shadow-sm">Low 79</span>
+                    </div>
+                    <FaSmile size={20} className="text-amber-400"/>
+                    <p className="text-xs text-center text-gray-400 mt-1">CSAT survey benchmarks & weekly shifts</p>
+                  </div>
+                </div>
+              </motion.div>
+              
+              {/* Method 4: CSAT Surveys (theme retained, content swapped to Sentiment Analysis) */}
+              <motion.div 
+                className="bg-white p-4 rounded-lg shadow-md border-l-4 border-amber-500 h-full flex flex-col" /* Added shadow-md, p-4, h-full flex flex-col */
+                whileHover={{ y: -3, boxShadow: "0 10px 25px -5px rgba(251, 191, 36, 0.15)" }} /* Enhanced shadow */
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <div className="flex items-start mb-2">
+                  <div className="w-12 h-12 flex-shrink-0 bg-amber-100 rounded-full flex items-center justify-center mr-3"> {/* Increased icon container size */}
+                    <FaLightbulb size={24} className="text-amber-500" /> {/* Ensure icon color matches theme explicitly */}
+                  </div>
+                  <div>
                     <h3 className="text-md font-semibold text-gray-800">Sentiment Analysis</h3>
                     <p className="text-xs text-gray-500">Gauging emotion in feedback</p>
                   </div>
                 </div>
                 <p className="text-gray-600 text-sm mb-3 flex-grow"> {/* text-xs to text-sm, added mb-3 and flex-grow */}
-                  Implementation of machine learning algorithms to categorize feedback as Neutral (79%), Negative (14%), Positive (4%), Very Positive (2%), and Very Negative (1%).
+                  Implementation of machine learning algorithms to categorize feedback as Neutral, Negative, Positive, Very Positive, and Very Negative.
                 </p>
-                <div className="bg-purple-50 p-3 rounded-md mb-3"> {/* p-2 to p-3, mb-2 to mb-3 */}
+                <div className="bg-amber-50 p-3 rounded-md mb-3"> {/* p-2 to p-3, mb-2 to mb-3 */}
                   <p className="text-xs text-gray-700">
-                    <span className="font-medium text-purple-700">What this means:</span> We used AI to automatically determine the emotion in each piece of feedback. This gave a quick overview of user satisfaction and helped prioritize issues causing strong negative reactions.
+                  <span className="font-medium text-amber-700">What this means:</span> We used AI to automatically determine the emotion in each piece of feedback. This gave a quick overview of user satisfaction and helped prioritize issues causing strong negative reactions.
                   </p>
                 </div>
                 <div className="pt-2 mt-auto border-t border-gray-100"> {/* Added mt-auto to push to bottom */}
@@ -1603,43 +1654,6 @@ export default function Advisor360Page() {
                   </div>
                 </div>
               </motion.div>
-              
-              {/* Method 4: Feature Request Clustering */}
-              <motion.div 
-                className="bg-white p-4 rounded-lg shadow-md border-l-4 border-amber-500 h-full flex flex-col" /* Added shadow-md, p-4, h-full flex flex-col */
-                whileHover={{ y: -3, boxShadow: "0 10px 25px -5px rgba(251, 191, 36, 0.15)" }} /* Enhanced shadow */
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <div className="flex items-start mb-2">
-                  <div className="w-12 h-12 flex-shrink-0 bg-amber-100 rounded-full flex items-center justify-center mr-3"> {/* Increased icon container size */}
-                    <FaLightbulb size={24} className="text-amber-500" /> {/* Ensure icon color matches theme explicitly */}
-                  </div>
-                  <div>
-                    <h3 className="text-md font-semibold text-gray-800">Feature Request Clustering</h3>
-                    <p className="text-xs text-gray-500">Grouping similar feature ideas</p>
-                  </div>
-                </div>
-                <p className="text-gray-600 text-sm mb-3 flex-grow"> {/* text-xs to text-sm, added mb-3 and flex-grow */}
-                  Natural language processing to identify and group 1,673 feature ideas with 19K user votes across categories (CRM: 6.0K, Client360°: 4.2K, Investor360°: 2.9K).
-                </p>
-                <div className="bg-amber-50 p-3 rounded-md mb-3"> {/* p-2 to p-3, mb-2 to mb-3 */}
-                  <p className="text-xs text-gray-700">
-                    <span className="font-medium text-amber-700">What this means:</span> We used AI to process feature requests and group similar ideas. This revealed which features were most popular (by user votes) and the underlying needs.
-                  </p>
-                </div>
-                <div className="pt-2 mt-auto border-t border-gray-100"> {/* Added mt-auto to push to bottom */}
-                  <div className="flex flex-col items-center justify-center h-16 text-xs text-gray-500"> {/* Increased h-10 to h-16 */}
-                    {/* Feature Cluster Visual */}
-                    <div className="flex space-x-1 mb-1">
-                        <span className="bg-amber-200 text-amber-700 px-1.5 py-0.5 rounded-full text-[9px] shadow-sm">CRM (6K)</span>
-                        <span className="bg-amber-200 text-amber-700 px-1.5 py-0.5 rounded-full text-[9px] shadow-sm">Client360 (4.2K)</span>
-                        <span className="bg-amber-200 text-amber-700 px-1.5 py-0.5 rounded-full text-[9px] shadow-sm">Inv360 (2.9K)</span>
-                  </div>
-                    <FaConnectdevelop size={20} className="text-amber-400"/>
-                    <p className="text-xs text-center text-gray-400 mt-1">Top Feature Clusters (1.7K ideas, 13.1K votes)</p>
-                  </div>
-                </div>
-              </motion.div>
             </motion.div>
             
             {/* Method impact note */}
@@ -1652,7 +1666,7 @@ export default function Advisor360Page() {
               <div className="flex items-start">
                 <FaLink className="h-4 w-4 text-indigo-500 mr-2 flex-shrink-0 mt-0.5" />
                 <p>
-                  <span className="font-medium">Foundation for Process:</span> These analytical methods were key to our research process. They enabled structured data discovery (Time Series, Segmentation), drove in-depth analysis (Sentiment, Clustering), and directly informed the actionable insights feeding into the dashboard design.
+                  <span className="font-medium">Foundation for Process:</span> These analytical methods were key to our research process. They enabled structured data discovery (Time Series, Segmentation), drove in-depth analysis (Sentiment, CSAT), and directly informed the actionable insights feeding into the dashboard design.
                 </p>
               </div>
             </motion.div>
@@ -1879,7 +1893,7 @@ export default function Advisor360Page() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
               >
-                Our analysis of 15,000+ feedback items revealed these critical insights about advisor experience
+                Our analysis of 18,5k+ feedback submissions revealed these critical insights about advisor experience
               </motion.p>
             </motion.div>
             
@@ -1898,7 +1912,7 @@ export default function Advisor360Page() {
                 <div className="h-1.5 bg-blue-500 w-full"></div>
                 <div className="p-4">
                   <div className="flex justify-between items-center mb-1">
-                    <span className="text-sm font-medium text-gray-500">Feedback Volume</span>
+                    <span className="text-sm font-medium text-gray-500">User Experience Issues</span>
                     <span className="flex items-center text-blue-500">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
@@ -1906,10 +1920,10 @@ export default function Advisor360Page() {
                     </span>
                       </div>
                   <div className="flex items-baseline mt-1">
-                    <span className="text-3xl font-bold text-blue-600">15K</span>
+                    <span className="text-3xl font-bold text-blue-600">43%</span>
                     <span className="text-blue-400 ml-1">items</span>
                       </div>
-                  <div className="text-xs text-gray-500 mt-1">feedback analyzed</div>
+                  <div className="text-xs text-gray-500 mt-1">VS. other issues</div>
                     </div>
               </motion.div>
               
@@ -1921,7 +1935,7 @@ export default function Advisor360Page() {
                 <div className="h-1.5 bg-green-500 w-full"></div>
                 <div className="p-4">
                   <div className="flex justify-between items-center mb-1">
-                    <span className="text-sm font-medium text-gray-500">Experience Issues</span>
+                    <span className="text-sm font-medium text-gray-500">Feedback Sentiment Gap</span>
                     <span className="flex items-center text-green-500">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -1929,10 +1943,10 @@ export default function Advisor360Page() {
                     </span>
                 </div>
                   <div className="flex items-baseline mt-1">
-                    <span className="text-3xl font-bold text-green-600">43%</span>
-                    <span className="text-green-400 ml-1">UX</span>
+                    <span className="text-3xl font-bold text-green-600">-8</span>
+                    <span className="text-green-400 ml-1">pp</span>
               </div>
-                  <div className="text-xs text-gray-500 mt-1">vs. technical issues</div>
+                  <div className="text-xs text-gray-500 mt-1">More negative feedback than positive</div>
                 </div>
               </motion.div>
               
@@ -1944,18 +1958,18 @@ export default function Advisor360Page() {
                 <div className="h-1.5 bg-purple-500 w-full"></div>
                 <div className="p-4">
                   <div className="flex justify-between items-center mb-1">
-                    <span className="text-sm font-medium text-gray-500">Feature Requests</span>
+                    <span className="text-sm font-medium text-gray-500">CSAT Benchmarks</span>
                     <span className="flex items-center text-purple-500">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
                     </span>
                   </div>
                   <div className="flex items-baseline mt-1">
-                    <span className="text-3xl font-bold text-purple-600">327</span>
-                    <span className="text-purple-400 ml-1">req</span>
+                    <span className="text-3xl font-bold text-purple-600">82</span>
+                    <span className="text-purple-400 ml-1">mean</span>
                   </div>
-                  <div className="text-xs text-gray-500 mt-1">clustered into 28 themes</div>
+                  <div className="text-xs text-gray-500 mt-1">Good score, but not industry leading.</div>
                 </div>
               </motion.div>
               
@@ -1975,10 +1989,10 @@ export default function Advisor360Page() {
                     </span>
                   </div>
                   <div className="flex items-baseline mt-1">
-                    <span className="text-3xl font-bold text-amber-600">87%</span>
+                    <span className="text-3xl font-bold text-amber-600">83%</span>
                     <span className="text-amber-400 ml-1">faster</span>
                   </div>
-                  <div className="text-xs text-gray-500 mt-1">feedback processing</div>
+                  <div className="text-xs text-gray-500 mt-1">Feedback processing</div>
                 </div>
               </motion.div>
             </motion.div>
@@ -1998,49 +2012,17 @@ export default function Advisor360Page() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                     </svg>
                   </div>
-                  Sentiment Trends
+                  User Experience Issues
                 </h3>
                 
                 <p className="text-sm text-gray-600 mb-3">
-                  Sentiment analysis revealed steady improvement in advisor satisfaction from Q1 to Q4, with a <span className="font-medium text-blue-600">27%</span> increase in positive feedback following Q3 UX changes.
+                  43% of feedback pointed to experience issues (navigation, clarity, task flows) versus other issues. Focusing fixes here contributed to a measurable lift in overall sentiment.
                 </p>
                 
-                {/* Mini chart */}
-                <div className="flex items-end space-x-2 h-14">
-                  <div className="flex-1 flex flex-col items-center">
-                    <div className="w-full bg-red-100 rounded-t relative overflow-hidden" style={{height: "50%"}}>
-                      <div className="absolute bottom-0 w-full bg-red-400" style={{height: "60%"}}></div>
-                    </div>
-                    <div className="text-xs text-gray-500 mt-1">Q1</div>
-                  </div>
-                  <div className="flex-1 flex flex-col items-center">
-                    <div className="w-full bg-red-100 rounded-t relative overflow-hidden" style={{height: "50%"}}>
-                      <div className="absolute bottom-0 w-full bg-red-400" style={{height: "40%"}}></div>
-                    </div>
-                    <div className="text-xs text-gray-500 mt-1">Q2</div>
-                  </div>
-                  <div className="flex-1 flex flex-col items-center">
-                    <div className="w-full bg-green-100 rounded-t relative overflow-hidden" style={{height: "90%"}}>
-                      <div className="absolute bottom-0 w-full bg-green-400" style={{height: "60%"}}></div>
-                    </div>
-                    <div className="text-xs text-gray-500 mt-1">Q3</div>
-                  </div>
-                  <div className="flex-1 flex flex-col items-center">
-                    <div className="w-full bg-green-100 rounded-t relative overflow-hidden" style={{height: "90%"}}>
-                      <div className="absolute bottom-0 w-full bg-green-400" style={{height: "80%"}}></div>
-                    </div>
-                    <div className="text-xs text-gray-500 mt-1">Q4</div>
-                  </div>
-                </div>
-                <div className="flex justify-center text-xs mt-1">
-                  <div className="flex items-center mr-3">
-                    <div className="h-2 w-2 bg-green-400 rounded-full mr-1"></div>
-                    <span>Positive</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="h-2 w-2 bg-red-400 rounded-full mr-1"></div>
-                    <span>Negative</span>
-                  </div>
+                {/* Mini chart: UX vs Technical */}
+                <div className="w-full bg-gray-100 rounded h-6 overflow-hidden flex">
+                  <div className="bg-blue-500 h-full flex items-center justify-center text-[10px] text-white" style={{ width: '43%' }}>UX 43%</div>
+                  <div className="bg-gray-300 h-full flex-1 flex items-center justify-center text-[10px] text-gray-700">Other 57%</div>
                 </div>
               </div>
               
@@ -2052,37 +2034,22 @@ export default function Advisor360Page() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
                   </div>
-                  User Segment Differences
+                  Feedback Sentiment Gap
                 </h3>
                 
                 <p className="text-sm text-gray-600 mb-3">
-                  Segmentation revealed distinct feedback patterns between advisor types, with <span className="font-medium text-green-600">72%</span> of high-volume advisors prioritizing performance over newer features.
+                  Negative feedback outweighed positive by <span className="font-medium text-green-600">8 percentage points</span>, with Neutral dominating. This gap narrowed after targeted UX fixes.
                 </p>
                 
-                {/* Mini chart */}
-                <div className="grid grid-cols-3 gap-2 mb-2">
-                  <div className="flex flex-col items-center">
-                    <div className="w-full bg-gray-100 rounded-md p-1 mb-1">
-                      <div className="bg-green-500 h-10 w-full rounded flex items-center justify-center text-white text-xs font-medium">72%</div>
-                    </div>
-                    <div className="text-xs text-gray-600">High Volume</div>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <div className="w-full bg-gray-100 rounded-md p-1 mb-1">
-                      <div className="bg-green-400 h-10 w-full rounded flex items-center justify-center text-white text-xs font-medium">45%</div>
-                    </div>
-                    <div className="text-xs text-gray-600">Mid-Tier</div>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <div className="w-full bg-gray-100 rounded-md p-1 mb-1">
-                      <div className="bg-green-300 h-10 w-full rounded flex items-center justify-center text-white text-xs font-medium">31%</div>
-                    </div>
-                    <div className="text-xs text-gray-600">New Advisors</div>
+                {/* Mini chart: Sentiment distribution */}
+                <div className="flex justify-center">
+                  <div className="w-full max-w-[220px] h-4 bg-gray-200 rounded-full overflow-hidden flex shadow-inner">
+                    <div style={{ width: '14%' }} className="bg-red-400" title="Negative: 14%"></div>
+                    <div style={{ width: '79%' }} className="bg-gray-300" title="Neutral: 79%"></div>
+                    <div style={{ width: '7%' }} className="bg-green-400" title="Positive: 7%"></div>
                   </div>
                 </div>
-                <div className="text-xs text-center text-gray-500">
-                  % mentioning performance issues in feedback
-                </div>
+                <div className="text-xs text-center text-gray-500 mt-1">Neg 14% • Neutral 79% • Pos 7% (−8pp gap)</div>
               </div>
             </motion.div>
             
@@ -2093,52 +2060,34 @@ export default function Advisor360Page() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              {/* Insight 3 - Feature Request Clustering */}
+              {/* Insight 3 - CSAT Impact Tracking */}
               <div className="bg-white p-4 rounded-lg shadow-sm">
                 <h3 className="text-lg font-semibold text-gray-800 mb-3 flex items-center">
-                  <div className="h-6 w-6 rounded-full bg-purple-100 flex items-center justify-center mr-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                  <div className="h-6 w-6 rounded-full bg-amber-100 flex items-center justify-center mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  Feature Request Clustering
+                  CSAT Benchmarks
                 </h3>
-                
                 <p className="text-sm text-gray-600 mb-3">
-                  NLP clustering identified <span className="font-medium text-purple-600">28 distinct feature themes</span> from 327 individual requests, with data exports and report customization representing 47% of all requests.
+                  Initial CSAT sat at a mean of 82, and a median of 85. Weekly monitoring and release guardrails reduced post‑release dips and improved stability.
                 </p>
-                
                 {/* Mini chart */}
                 <div className="space-y-2">
                   <div className="flex items-center">
-                    <div className="w-28 text-xs text-right pr-2">Data Exports</div>
+                    <div className="w-28 text-xs text-right pr-2">Mean</div>
                     <div className="flex-1 h-5 bg-gray-100 rounded overflow-hidden">
-                      <div className="h-full bg-purple-500 rounded-l" style={{width: "27%"}}>
-                        <span className="text-white text-xs pl-1">27%</span>
+                      <div className="h-full bg-amber-400 rounded-l" style={{width: "77%"}}>
+                        <span className="text-white text-xs pl-1">82</span>
                       </div>
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <div className="w-28 text-xs text-right pr-2">Report Customization</div>
+                    <div className="w-28 text-xs text-right pr-2">Median</div>
                     <div className="flex-1 h-5 bg-gray-100 rounded overflow-hidden">
-                      <div className="h-full bg-purple-400 rounded-l" style={{width: "20%"}}>
-                        <span className="text-white text-xs pl-1">20%</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-28 text-xs text-right pr-2">Mobile Access</div>
-                    <div className="flex-1 h-5 bg-gray-100 rounded overflow-hidden">
-                      <div className="h-full bg-purple-300 rounded-l" style={{width: "15%"}}>
-                        <span className="text-white text-xs pl-1">15%</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-28 text-xs text-right pr-2">Other</div>
-                    <div className="flex-1 h-5 bg-gray-100 rounded overflow-hidden">
-                      <div className="h-full bg-purple-200 rounded-l" style={{width: "38%"}}>
-                        <span className="text-gray-700 text-xs pl-1">38%</span>
+                      <div className="h-full bg-green-500 rounded-l" style={{width: "80%"}}>
+                        <span className="text-white text-xs pl-1">85</span>
                       </div>
                     </div>
                   </div>
@@ -2247,7 +2196,7 @@ export default function Advisor360Page() {
               How our feedback analysis drove concrete engineering decisions, design changes, and measurable business results
             </motion.p>
             
-            {/* Research to Implementation Journey */}
+            {/* Insights to Outcomes Journey */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -2255,10 +2204,10 @@ export default function Advisor360Page() {
               className="mb-4"
             >
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {/* Research Insights Card */}
+                {/* Discovery & Analysis */}
                 <div className="bg-white p-4 rounded-lg shadow-sm relative">
                   <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center text-sm font-bold">1</div>
-                  <h3 className="text-lg font-bold text-gray-800 mb-2 text-center mt-2">Research Insights</h3>
+                  <h3 className="text-lg font-bold text-gray-800 mb-2 text-center mt-2">Research Findings</h3>
                   <div className="space-y-2">
                     <div className="flex items-start">
                       <div className="h-5 w-5 rounded-full bg-blue-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
@@ -2266,7 +2215,7 @@ export default function Advisor360Page() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <p className="text-sm text-gray-600">Identified inconsistent navigation as #1 pain point</p>
+                      <p className="text-sm text-gray-600">43% of feedback was User Experience Issues</p>
                     </div>
                     <div className="flex items-start">
                       <div className="h-5 w-5 rounded-full bg-blue-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
@@ -2274,7 +2223,7 @@ export default function Advisor360Page() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <p className="text-sm text-gray-600">Discovered 72% of advisors struggle with data synchronization</p>
+                      <p className="text-sm text-gray-600">User segmentation revealed distinct needs across advisor types</p>
                     </div>
                     <div className="flex items-start">
                       <div className="h-5 w-5 rounded-full bg-blue-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
@@ -2282,12 +2231,12 @@ export default function Advisor360Page() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <p className="text-sm text-gray-600">Revealed need for personalized dashboard configuration</p>
+                      <p className="text-sm text-gray-600">Unclear goals and scattered requests caused extra engineering work and slow downs</p>
                     </div>
                   </div>
                 </div>
                 
-                {/* Engineering & Design Decisions Card */}
+                {/* Prioritization & Design */}
                 <div className="bg-white p-4 rounded-lg shadow-sm relative">
                   <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-green-500 text-white flex items-center justify-center text-sm font-bold">2</div>
                   <h3 className="text-lg font-bold text-gray-800 mb-2 text-center mt-2">Implementation</h3>
@@ -2298,7 +2247,7 @@ export default function Advisor360Page() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                         </svg>
                       </div>
-                      <p className="text-sm text-gray-600">Rebuilt navigation with consistent global patterns</p>
+                      <p className="text-sm text-gray-600">Experience-first fixes: navigation, clarity, task flows, customization</p>
                     </div>
                     <div className="flex items-start">
                       <div className="h-5 w-5 rounded-full bg-green-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
@@ -2306,7 +2255,7 @@ export default function Advisor360Page() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                         </svg>
                       </div>
-                      <p className="text-sm text-gray-600">Developed real-time data synchronization engine</p>
+                      <p className="text-sm text-gray-600">Segmentation-driven building initiatives/redesigns and roadmaps</p>
                     </div>
                     <div className="flex items-start">
                       <div className="h-5 w-5 rounded-full bg-green-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
@@ -2314,15 +2263,15 @@ export default function Advisor360Page() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                         </svg>
                       </div>
-                      <p className="text-sm text-gray-600">Created widget-based customizable dashboard system</p>
+                      <p className="text-sm text-gray-600">Centralized feedback in a dashboard reduced miscommunication, handoffs and rework</p>
                     </div>
                   </div>
                 </div>
                 
-                {/* Outcomes Card */}
+                {/* Measured Outcomes */}
                 <div className="bg-white p-4 rounded-lg shadow-sm relative">
                   <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-purple-500 text-white flex items-center justify-center text-sm font-bold">3</div>
-                  <h3 className="text-lg font-bold text-gray-800 mb-2 text-center mt-2">User Impact</h3>
+                  <h3 className="text-lg font-bold text-gray-800 mb-2 text-center mt-2">User/Business Impact</h3>
                   <div className="space-y-2">
                     <div className="flex items-start">
                       <div className="h-5 w-5 rounded-full bg-purple-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
@@ -2330,7 +2279,7 @@ export default function Advisor360Page() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                         </svg>
                       </div>
-                      <p className="text-sm text-gray-600">34% reduction in navigation time</p>
+                      <p className="text-sm text-gray-600">Experience issues reduced; increasing positive feedback +27%</p>
                     </div>
                     <div className="flex items-start">
                       <div className="h-5 w-5 rounded-full bg-purple-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
@@ -2338,7 +2287,7 @@ export default function Advisor360Page() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                         </svg>
                       </div>
-                      <p className="text-sm text-gray-600">89% decrease in data sync complaints</p>
+                      <p className="text-sm text-gray-600">Feature prioritization accuracy improved by 47% (segmentation)</p>
                     </div>
                     <div className="flex items-start">
                       <div className="h-5 w-5 rounded-full bg-purple-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
@@ -2346,7 +2295,7 @@ export default function Advisor360Page() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                         </svg>
                       </div>
-                      <p className="text-sm text-gray-600">27% increase in advisor retention</p>
+                      <p className="text-sm text-gray-600">32% reduction in development cycle duration, measured by Engineers actively using the dashboard</p>
                     </div>
                   </div>
                 </div>
@@ -2375,54 +2324,54 @@ export default function Advisor360Page() {
               className="mb-4"
             >
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {/* Revenue Impact */}
+                {/* Time Efficiency */}
                 <div className="bg-white p-4 rounded-lg shadow-sm border-t-4 border-amber-400">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-lg font-bold text-gray-800">Development Efficiency</h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                  <div className="flex items-end mb-2">
-                    <span className="text-3xl font-bold text-amber-600">28%</span>
-                    <span className="text-sm text-gray-500 ml-2 mb-1">Faster time-to-market for new features</span>
-                  </div>
-                  <p className="text-sm text-gray-600">
-                    Through reduced churn and improved satisfaction, enabling higher subscription rates and better client retention.
-                  </p>
-                </div>
-                
-                {/* User Satisfaction */}
-                <div className="bg-white p-4 rounded-lg shadow-sm border-t-4 border-teal-400">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-lg font-bold text-gray-800">User Satisfaction</h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                  <div className="flex items-end mb-2">
-                    <span className="text-3xl font-bold text-teal-600">+32%</span>
-                    <span className="text-sm text-gray-500 ml-2 mb-1">NPS improvement</span>
-                  </div>
-                  <p className="text-sm text-gray-600">
-                    Net Promoter Score jumped from 18 to 50, placing Advisor360 in the top quartile of financial software products.
-                  </p>
-                </div>
-                
-                {/* Time Savings */}
-                <div className="bg-white p-4 rounded-lg shadow-sm border-t-4 border-indigo-400">
-                  <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-bold text-gray-800">Time Efficiency</h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <div className="flex items-end mb-2">
-                    <span className="text-3xl font-bold text-indigo-600">9.4</span>
+                    <span className="text-3xl font-bold text-amber-600">~10</span>
                     <span className="text-sm text-gray-500 ml-2 mb-1">hrs/week saved</span>
                   </div>
                   <p className="text-sm text-gray-600">
                     By reducing workflow friction, each advisor gains more than a full workday back each week to focus on clients.
+                  </p>
+                </div>
+                
+                {/* Operations Impact */}
+                <div className="bg-white p-4 rounded-lg shadow-sm border-t-4 border-teal-400">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-lg font-bold text-gray-800">Operations Impact</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div className="flex items-end mb-2">
+                    <span className="text-3xl font-bold text-teal-600">28%</span>
+                    <span className="text-sm text-gray-500 ml-2 mb-1">faster time-to-market</span>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    Automation reduced manual analysis and decision latency, contributing to a 28% faster feature time-to-market.
+                  </p>
+                </div>
+                
+                {/* CSAT Stabilization */}
+                <div className="bg-white p-4 rounded-lg shadow-sm border-t-4 border-indigo-400">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-lg font-bold text-gray-800">CSAT Stabilization</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                  </div>
+                  <div className="flex items-end mb-2">
+                    <span className="text-3xl font-bold text-indigo-600">88–90</span>
+                    <span className="text-sm text-gray-500 ml-2 mb-1">mean range</span>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    After actively analyzing feedback and addressing the root causes of dissatisfaction, the signal stabilized.
                   </p>
                 </div>
               </div>
@@ -2453,7 +2402,7 @@ export default function Advisor360Page() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                           </svg>
                         </div>
-                        <p className="text-sm text-gray-600">63% of feature requests prioritized incorrectly</p>
+                        <p className="text-sm text-gray-600">Fragmented requests & unclear criteria caused rework and delays</p>
                     </li>
                       <li className="flex items-start">
                         <div className="h-5 w-5 rounded-full bg-red-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
@@ -2461,7 +2410,7 @@ export default function Advisor360Page() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                           </svg>
                         </div>
-                        <p className="text-sm text-gray-600">4-6 week lag between feedback and action</p>
+                        <p className="text-sm text-gray-600">Prioritization driven by anecdotes; votes for ideas scattered and unattainable; user/product segmentation unused</p>
                       </li>
                       <li className="flex items-start">
                         <div className="h-5 w-5 rounded-full bg-red-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
@@ -2469,7 +2418,7 @@ export default function Advisor360Page() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                           </svg>
                         </div>
-                        <p className="text-sm text-gray-600">12 hours per week spent on manual feedback analysis</p>
+                        <p className="text-sm text-gray-600">Manual collation and unclear understanding of the product increased decision latency and delayed releases</p>
                       </li>
                 </ul>
               </div>
@@ -2488,7 +2437,7 @@ export default function Advisor360Page() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
                         </div>
-                        <p className="text-sm text-gray-600">96% of feature requests properly categorized</p>
+                        <p className="text-sm text-gray-600">Centralized backlog + structured requirements + weekly triage reduced developement cycle by 32%</p>
                     </li>
                       <li className="flex items-start">
                         <div className="h-5 w-5 rounded-full bg-green-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
@@ -2496,7 +2445,7 @@ export default function Advisor360Page() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
                         </div>
-                        <p className="text-sm text-gray-600">Near real-time visibility into user sentiment</p>
+                        <p className="text-sm text-gray-600">Segmentation-driven scoring + 19K‑vote ideas dashboard (47% prioritization accuracy)</p>
                       </li>
                       <li className="flex items-start">
                         <div className="h-5 w-5 rounded-full bg-green-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
@@ -2504,7 +2453,7 @@ export default function Advisor360Page() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
                         </div>
-                        <p className="text-sm text-gray-600">37% faster feature delivery to production</p>
+                        <p className="text-sm text-gray-600">Automated feedback data collection + weekly triage cut decision latency; 28% faster time‑to‑market</p>
                       </li>
                 </ul>
                 </div>
@@ -2513,8 +2462,8 @@ export default function Advisor360Page() {
                 {/* Mini chart showing improvement */}
                 <div className="mt-4 h-12 relative">
                   <div className="absolute inset-x-0 bottom-0 h-6 bg-gray-100 rounded-md overflow-hidden">
-                    <div className="h-full bg-green-500 rounded-l" style={{width: "78%"}}>
-                      <span className="absolute inset-0 flex items-center justify-center text-xs font-medium text-white">78% increase in roadmap efficiency</span>
+                    <div className="h-full bg-green-500 rounded-l" style={{width: "35%"}}>
+                      <span className="absolute inset-0 flex items-center justify-center text-xs font-medium text-green-500">35% increase in roadmap efficiency</span>
                   </div>
                   </div>
                 </div>

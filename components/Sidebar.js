@@ -85,10 +85,10 @@ export default function Sidebar() {
             Industry Work
           </h2>
           <ul className="space-y-1 text-base text-gray-600">
-            <li><Link href="/projects/advisor360" className={`transition-colors duration-300 hover:text-blue-600 hover:font-black nav-link ${isActive("/projects/advisor360") ? "font-extrabold text-blue-600" : ""}`} onClick={handleLinkClick}>Feedback Sentiment Analysis</Link></li>
+            <li><Link href="/projects/advisor360" className={`transition-colors duration-300 hover:text-blue-600 hover:font-black nav-link ${isActive("/projects/advisor360") ? "font-extrabold text-blue-600" : ""}`} onClick={handleLinkClick}>Feedback Intelligence Analysis</Link></li>
             <li><Link href="/projects/ga_data" className={`transition-colors duration-300 hover:text-blue-600 hover:font-black nav-link ${isActive("/projects/ga_data") ? "font-extrabold text-blue-600" : ""}`} onClick={handleLinkClick}>Log Sequence Visualizations</Link></li>
-            <li><Link href="/projects/ag_columns" className={`transition-colors duration-300 hover:text-blue-600 hover:font-black nav-link ${isActive("/projects/ag_columns") ? "font-extrabold text-blue-600" : ""}`} onClick={handleLinkClick}>User Behavior Clustering</Link></li>
-            <li><Link href="/projects/proposals" className={`transition-colors duration-300 hover:text-blue-600 hover:font-black nav-link ${isActive("/projects/proposals") ? "font-extrabold text-blue-600" : ""}`} onClick={handleLinkClick}>ML Correlation Analysis</Link></li>
+            <li><Link href="/projects/ag_columns" className={`transition-colors duration-300 hover:text-blue-600 hover:font-black nav-link ${isActive("/projects/ag_columns") ? "font-extrabold text-blue-600" : ""}`} onClick={handleLinkClick}>Column Behavior Clustering</Link></li>
+            <li><Link href="/projects/proposals" className={`transition-colors duration-300 hover:text-blue-600 hover:font-black nav-link ${isActive("/projects/proposals") ? "font-extrabold text-blue-600" : ""}`} onClick={handleLinkClick}>Proposal Correlation Analysis</Link></li>
             <li><Link href="/projects/valuemap" className={`transition-colors duration-300 hover:text-blue-600 hover:font-black nav-link ${isActive("/projects/valuemap") ? "font-extrabold text-blue-600" : ""}`} onClick={handleLinkClick}>Value Mapping Survey</Link></li>
           </ul>
         </nav>
