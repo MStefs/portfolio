@@ -57,7 +57,7 @@ const bulletIcons = [
 
 /* --- GOOGLE ANALYTICS PROJECT DETAILS --- */
 const projectDetails = {
-  title: "GA / Platform Data Log Sequence Analysis",
+  title: "GA / Platform Data Log Analysis",
   subtitle: "Bridging Google Analytics and Platform Data to drive product improvements",
   overview: `
     This quantitative UX research initiative unified Google Analytics (GA) session data with Platform Data events to create a comprehensive view of user behavior. Through log analysis, data integration & modeling, user path analysis, custom engagement metric development, and stickiness ratio analysis, we achieved measurable business outcomes: **~11% quarterly improvement** in median engagement scores, **~80% WAU/MAU ratio** indicating strong platform stickiness, and **10+ hours weekly** saved in manual reporting through automated dashboards. The integrated analytics framework enabled stakeholders to make data-driven decisions with unified user telemetry, directly informing UX improvements and product strategy across the complete user journey.
@@ -98,7 +98,7 @@ const projectDetails = {
       title: "Our Research Aimed To:",
       iconName: "FaLightbulb",
       points: [
-        "Create a unified data model integrating GA data points and Platform Data behavioral data.",
+        "Create a unified Log Analysis framework integrating GA data points and Platform Data behavioral data.",
         "Quantify user telemetry, user paths, sequence conversions, and drop-off points across systems.",
         "Develop holistic engagement metrics reflecting true product interaction.",
         "Enable data-driven decisions for UX, product, and other stakeholder strategies."
