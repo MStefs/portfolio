@@ -633,7 +633,7 @@ const projectDetails = {
         "Delays in product decisions due to lack of timely feedback insights.",
         "Missed opportunities to proactively address user pain points or capitalize on positive trends.",
         "Inability to accurately gauge user satisfaction or the impact of product changes.",
-        "Product roadmap decisions were often based on assumptions or the loudest voices, not comprehensive data, costin effort and resources."
+        "Product roadmap decisions were often based on assumptions or the loudest voices, not comprehensive data, costing effort and resources."
         
         
       ]
@@ -646,7 +646,7 @@ const projectDetails = {
         "Develop an interactive dashboard for Stakeholders to easily explore and understand feedback data.",
         "Drastically reduce manual effort and empower data-driven prioritization.",
         "Implement automated feedback sentiment analysis and trend identification.",
-        "Provide an overall CSAT metric for Stakeholders to track the impact of their product decisions, and compare that to the overall CSAT of other company products and services."
+        "Provide an overall CSAT metric for Stakeholders to track the impact of their product decisions, and compare that to the overall CSAT of other companies, inner products and services."
       ]
     }
   },
