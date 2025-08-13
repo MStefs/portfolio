@@ -1918,7 +1918,7 @@ export default function GoogleAnalyticsCase() {
               className="mb-4"
             >
               <div className="bg-white p-4 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center">Analytics Transformation</h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center">Roadmap Analytics Transformation</h3>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div className="space-y-2">
@@ -1995,8 +1995,8 @@ export default function GoogleAnalyticsCase() {
                 {/* Mini chart showing improvement */}
                 <div className="mt-4 h-12 relative">
                   <div className="absolute inset-x-0 bottom-0 h-6 bg-gray-100 rounded-md overflow-hidden">
-                    <div className="h-full bg-green-500 rounded-l" style={{width: "83%"}}>
-                      <span className="absolute inset-0 flex items-center justify-center text-xs font-medium text-white">83% improvement in actionable insights</span>
+                    <div className="h-full bg-green-500 rounded-l" style={{width: "100%"}}>
+                      <span className="absolute inset-0 flex items-center justify-center text-xs font-medium text-white">One source of truth that drove planning: GA + Platform Data informed what was built next and how success was measured.</span>
                     </div>
                   </div>
                 </div>
