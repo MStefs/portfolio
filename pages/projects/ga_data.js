@@ -60,7 +60,7 @@ const projectDetails = {
   title: "GA / Platform Data Log Sequence Analysis",
   subtitle: "Bridging Google Analytics and Platform Data to drive product improvements",
   overview: `
-    This quantitative UX research initiative unified Google Analytics (GA) session data with Platform Data events to create a comprehensive view of user behavior. Through data integration & modeling, user path analysis, custom engagement metric development, and stickiness ratio analysis, we achieved measurable business outcomes: **~11% quarterly improvement** in median engagement scores, **~80% WAU/MAU ratio** indicating strong platform stickiness, and **10+ hours weekly** saved in manual reporting through automated dashboards. The integrated analytics framework enabled stakeholders to make data-driven decisions with unified user telemetry, directly informing UX improvements and product strategy across the complete user journey.
+    This quantitative UX research initiative unified Google Analytics (GA) session data with Platform Data events to create a comprehensive view of user behavior. Through log analysis, data integration & modeling, user path analysis, custom engagement metric development, and stickiness ratio analysis, we achieved measurable business outcomes: **~11% quarterly improvement** in median engagement scores, **~80% WAU/MAU ratio** indicating strong platform stickiness, and **10+ hours weekly** saved in manual reporting through automated dashboards. The integrated analytics framework enabled stakeholders to make data-driven decisions with unified user telemetry, directly informing UX improvements and product strategy across the complete user journey.
   `,
   problem_statement_intro: `Product and marketing teams operated with a fractured view of the user journey. Web analytics (GA) tracked in-product user behavior, while Platform Data and product databases held in-app engagement data. This separation made it nearly impossible to understand the complete user lifecycle, measure true engagement, or confidently attribute product success to specific development efforts.`,
   challenge_areas: [
@@ -149,6 +149,10 @@ const projectDetails = {
   },
   
   methods: [
+    {
+      name: "Log Analysis",
+      description: "Systematic examination of raw Google Analytics session logs and Platform Data event logs to identify patterns, anomalies, and data quality issues before integration."
+    },
     {
       name: "Behavioral Data Integration & Modeling",
       description: "Designed a unified data model integrating Google Analytics behavioral logs with Platform Data events, enabling comprehensive analysis of cross-platform user journeys and interaction patterns."
