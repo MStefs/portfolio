@@ -2356,7 +2356,7 @@ export default function Advisor360Page() {
                     <span className="text-sm text-gray-500 ml-2 mb-1">faster time-to-market</span>
                   </div>
                   <p className="text-sm text-gray-600">
-                    Automation reduced manual analysis and decision latency, contributing to a 28% faster feature time-to-market.
+                    Streamlined feedback processing improved confidence and cut the average concept-to-ship timeline from ~8 to ~6 weeks.
                   </p>
                 </div>
                 
