@@ -72,7 +72,7 @@ export default function Sidebar() {
             <span className="text-3xl font-extrabold tracking-wide block">
               STEFANIDIS
             </span>
-            <p className="text-med font-bold text-indigo-600 mt-1">Quantitative Researcher / Data Analyst (UX / ML)</p>
+            <p className="text-med font-bold text-indigo-600 mt-1">User Researcher (Mixed Methods) / Data Analyst (ML)</p>
           </div>
         </Link>
       </header>
