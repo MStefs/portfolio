@@ -88,10 +88,10 @@ const projectDetails = {
       title: "The Cost of Siloed Data",
       iconName: "FaQuestionCircle",
       points: [
-        "Inability to identify critical drop-offs across the full user lifecycle.",
-        "Marketing and product strategies were often misaligned or based on incomplete data.",
-        "Wasted resources on unproven initiatives or poorly prioritized features.",
-        "Limited understanding of what truly drove long-term user stickiness and value."
+        "An absence of cohesive behavioral insight, resulting in strategies misaligned with live product usage.",
+        "Inability to identify critical friction points and drop-offs across the full user lifecycle.",
+        "Limited understanding of what truly drove long-term user engagement and value.",
+        "Wasted resources on unproven initiatives or poorly prioritized features."
       ]
     },
     research_goals: {
@@ -99,9 +99,9 @@ const projectDetails = {
       iconName: "FaLightbulb",
       points: [
         "Create a unified data model integrating GA data points and Platform Data behavioral data.",
-        "Quantify user paths, sequence conversions, and drop-off points across systems.",
+        "Quantify user telemetry, user paths, sequence conversions, and drop-off points across systems.",
         "Develop holistic engagement metrics reflecting true product interaction.",
-        "Enable data-driven decisions for UX, product, and marketing strategies."
+        "Enable data-driven decisions for UX, product, and other stakeholder strategies."
       ]
     }
   },
@@ -126,7 +126,7 @@ const projectDetails = {
       objective: "To map and analyze how users move through and interact with integrated GA and Platform Data/Features.",
       questions: [
         "How can we connect and understand the user journey between Google Analytics and Platform features? What metrics are important to track?",
-        "What do session behaviors (e.g., page views, page sequences, time on page, clicks, technology used) look like numerically and which of them indicate areas of friction or high value within the integrated data environment?",
+        "Across GA + Platform data, what do sessions look like by the numbers (pages, paths, time, events, tech), and which patterns clearly indicate friction or high-value moments?",
         "Which specific user roles (identified via Platform Data) show the highest engagement with particular platform features (tracked via GA)?"
       ]
     },
@@ -135,8 +135,8 @@ const projectDetails = {
       iconName: "FaChartLine", 
       objective: "To define, measure, and predict user engagement and stickiness based on combined data.",
       questions: [
-        "How should we define and track engagement across user/user cohorts (Platform Data) using GA session signals (frequency, depth) and in-product activity (events)?",
-        "What are our stickiness baselines (DAU/MAU, WAU/MAU, DAU/WAU), and where are the key drop-offs?",
+        "How should we define and track engagement across user/user cohorts (Platform Data) using GA session signals (unique URL visits, session/sequence time) and in-product activity (events)?",
+        "What are our stickiness baselines (DAU/MAU, WAU/MAU, DAU/WAU), and where/why are the key drop-offs?",
         "Based on current cross-platform usage patterns (GA & Platform Data), can we build a model to predict future user engagement, stickiness, and potential churn?"
       ]
     }
@@ -491,18 +491,18 @@ export default function GoogleAnalyticsCase() {
   const researchSteps = [
     {
       title: "Analytics Audit & PM Usage Challenges",
-      description: "Identified current analytics assets and investigated Product Managers\' utilization and adoption challenges.",
+      description: "Identified current analytics assets and investigated Stakeholders' utilization and adoption challenges.",
       insights: [
         "Conducted a comprehensive audit of existing Google Analytics reports and Platform Data dashboard capabilities.",
-        "Interviewed Product Managers to understand their current data sources, unmet needs, and reasons for underutilizing existing analytics tools.",
-        "Analyzed usage logs and telemetry from existing dashboards to quantify PM engagement and identify common pain points."
+        "Interviewed Stakeholders (Product Managers, Analysts, etc.) to understand their current data sources, unmet needs, and reasons for underutilizing existing analytics tools.",
+        "Analyzed usage logs and telemetry from existing dashboards to quantify Stakeholder engagement and identify common pain points."
       ]
     },
     {
       title: "Data Requirements Definition",
-      description: "Collaborated with stakeholders to define critical business questions, KPIs, and the specific data needed from GA and Platform Data systems.",
+      description: "Collaborated with Stakeholders to define critical business questions, KPIs, and the specific data needed from GA and Platform Data systems.",
       insights: [
-        "Facilitated workshops with Product Managers and business stakeholders to define key business questions and performance indicators (KPIs).",
+        "Facilitated workshops with Stakeholders to define key business questions and performance indicators (KPIs).",
         "Documented all required data points from Google Analytics and Platform Data systems needed to address the defined questions and track KPIs.",
         "Developed a comprehensive data dictionary and a detailed tracking plan for all necessary metrics, dimensions, and events."
       ]
@@ -520,18 +520,18 @@ export default function GoogleAnalyticsCase() {
       title: "Insight Generation & Analysis",
       description: "Analyzed the validated, integrated dataset to uncover actionable insights into user behavior, engagement patterns, and product stickiness.",
       insights: [
-        "Performed exploratory data analysis on the unified dataset to identify significant trends, user behavior patterns, correlations, and anomalies.",
+        "Performed exploratory data analysis on the unified dataset to identify significant trends, user behavior patterns and anomalies.",
         "Applied advanced analytical techniques such as user segmentation, cohort analysis, and event sequence mapping to derive deeper insights.",
         "Synthesized complex data findings into clear, actionable narratives and presented these insights to product, design, and marketing teams."
       ]
     },
     {
       title: "Dashboard Design & Deployment",
-      description: "Designed, developed, and deployed interactive dashboards to provide PMs with ongoing access to key metrics and actionable insights.",
+      description: "Designed, developed, and deployed interactive dashboards to provide Stakeholders with ongoing access to key metrics and actionable insights.",
       insights: [
         "Designed user-friendly, interactive dashboard mockups (Power BI) focusing on clear visualization of key insights and KPIs.",
-        "Iteratively developed and refined dashboards based on Product Manager feedback, usability testing, and evolving business requirements.",
-        "Deployed the finalized dashboards and conducted training sessions to empower PMs to use them effectively for data-driven decision-making."
+        "Iteratively developed and refined dashboards based on Stakeholder feedback, 'usability testing', and evolving business requirements.",
+        "Deployed the finalized dashboards and conducted training sessions to empower Stakeholders to use them effectively for data-driven decision-making."
       ]
     }
   ];
@@ -988,18 +988,18 @@ export default function GoogleAnalyticsCase() {
                     <FaLink size={24} className="text-blue-500" />
                   </div>
                   <div>
-                    <h3 className="text-md font-semibold text-gray-800">Behavioral Data Integration & Modeling</h3>
+                    <h3 className="text-md font-semibold text-gray-800">Log Data Integration & Time Series Analysis</h3>
                     <p className="text-xs text-gray-500">Integrated GA & Platform Data for a complete user view</p>
                   </div>
                 </div>
                 
                 <p className="text-gray-600 text-sm mb-3 flex-grow">
-                  Designed a unified data model integrating Google Analytics behavioral logs with Platform Data events, enabling comprehensive analysis of cross-platform user journeys and interaction patterns.
+                  Built a unified data model integrating Google Analytics behavioral logs with Platform Data events, enabling comprehensive analysis of cross-platform user telemetry and interaction patterns over time.
                 </p>
                 
                 <div className="bg-blue-50 p-3 rounded-md mb-3">
                   <p className="text-xs text-gray-700">
-                    <span className="font-medium text-blue-700">What this means:</span> Connected GA web logs and Platform Data user actions into one model. This provided a full user story, normalizing GA hits and platform events into one schema so we can sequence web actions and in-product events for the same user.
+                    <span className="font-medium text-blue-700">What this means:</span> Connected GA web logs and Platform Data user actions into one model, and looked at the data over time. This provided a full user story, normalizing GA hits and platform events into one schema so we can sequence web actions and in-product events for the same user.
                   </p>
                 </div>
                 
@@ -1042,7 +1042,7 @@ export default function GoogleAnalyticsCase() {
                 
                 <div className="bg-green-50 p-3 rounded-md mb-3">
                   <p className="text-xs text-gray-700">
-                    <span className="font-medium text-green-700">What this means:</span> Tracked user steps from landing page to conversion or other key events, locating pathways and identifying drop-offs (e.g., a 60% drop at one stage) to prioritize UX fixes.
+                    <span className="font-medium text-green-700">What this means:</span> Tracked user steps from landing page to conversion or other key events, locating pathways and identifying drop-offs to prioritize UX fixes and product improvements.
                   </p>
                 </div>
                 
@@ -1077,12 +1077,12 @@ export default function GoogleAnalyticsCase() {
                 </div>
                 
                 <p className="text-gray-600 text-sm mb-3 flex-grow">
-                  Developed and validated custom engagement scores by algorithmically weighting session duration, feature interactions, and key Platform Data event completions to quantify user involvement and platform stickiness.
+                  Developed and validated custom engagement scores by algorithmically weighting session/sequence duration, unique URL visits, and key event sequences to quantify user engagement.
                 </p>
                 
-                <div className="bg-purple-50 p-3 rounded-md mb-3">
+                <div className="bg-purple-50 p-3 rounded-md mb-3 min-h-[70px]">
                   <p className="text-xs text-gray-700">
-                    <span className="font-medium text-purple-700">What this means:</span> Developed a composite engagement score combining GA session duration, Platform Data feature use frequency, and GA interaction depth. This offered a better measure of true engagement, identifying power users and at-risk segments.
+                    <span className="font-medium text-purple-700">What this means:</span> Developed a composite engagement score combining GA session/sequence duration, unique visit frequencies, and interaction depth. This offered a better measure of true engagement from survey data, and also helped identify power users and at-risk segments.
                   </p>
                 </div>
                 
@@ -1123,15 +1123,15 @@ export default function GoogleAnalyticsCase() {
                   Quantified stickiness using DAU/WAU and WAU/MAU ratios, segmented by role and cohort, to understand how often users return and where habits strengthen or fade.
                 </p>
                 
-                <div className="bg-amber-50 p-3 rounded-md mb-3">
+                <div className="bg-amber-50 p-3 rounded-md mb-3 min-h-[70px]">
                   <p className="text-xs text-gray-700">
-                    <span className="font-medium text-amber-700">What this means:</span> Stickiness ratios show how frequently users come back within weeks and months, helping us spot segments with strong habits and those at risk.
+                    <span className="font-medium text-amber-700">What this means:</span> Stickiness ratios show how frequently users come back within weeks and months, helping us spot parts of the platform with strong habits and those at risk.
                   </p>
                 </div>
                 
                 {/* Mini visualization: Inline stickiness spark chart */}
-                <div className="pt-2 mt-auto border-t border-gray-100">
-                  <div className="flex flex-col items-center justify-center h-28">
+                                  <div className="pt-2 mt-auto border-t border-gray-100">
+                    <div className="flex flex-col items-center justify-center h-16">
                     <svg viewBox="0 0 240 80" className="w-[240px] h-[80px]">
                       {/* grid lines */}
                       <line x1="0" y1="60" x2="240" y2="60" stroke="#e5e7eb" strokeWidth="1" />
@@ -1161,7 +1161,7 @@ export default function GoogleAnalyticsCase() {
               <div className="flex items-start">
                 <FaLink className="h-4 w-4 text-indigo-500 mr-2 flex-shrink-0 mt-0.5" />
                 <p>
-                  <span className="font-medium text-indigo-700">Foundation for Process:</span> The chosen analytical methods (Data Integration, Path Analysis, Custom Metrics, Cohort Analysis) were instrumental in executing our research process. They directly enabled the crucial stages of defining data requirements (leading to SQL Metric Building), uncovering user behaviors for insight generation, and ultimately informed the evidence-based dashboard design.
+                  <span className="font-medium text-indigo-700">Foundation for Process:</span> The chosen analytical methods (Data Integration, Path Analysis, Custom Engagement Metric and Stickiness Ratio Analysis) were instrumental in executing the research process. They directly enabled the crucial stages of defining data requirements, uncovering user behaviors for insight generation, and ultimately informed the evidence-based dashboard design.
                 </p>
               </div>
             </motion.div>
@@ -1416,7 +1416,7 @@ export default function GoogleAnalyticsCase() {
                     <span className="text-3xl font-bold text-blue-600">+11</span>
                     <span className="text-blue-400 ml-1">%</span>
                   </div>
-                  <div className="text-xs text-gray-500 mt-1">in median session scores (Q4)</div>
+                  <div className="text-xs text-gray-500 mt-1">median session scores (Q4, 2024)</div>
                 </div>
               </motion.div>
               
@@ -1730,7 +1730,7 @@ export default function GoogleAnalyticsCase() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.1 }}
             >
-              How our analytics integration transformed raw data into actionable business intelligence and measurable results
+              How thisanalytics integration transformed raw data into actionable business intelligence and measurable results
             </motion.p>
             
             {/* Research to Implementation Journey */}
@@ -1752,7 +1752,7 @@ export default function GoogleAnalyticsCase() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <p className="text-sm text-gray-600">Tracked engagement growth (~11% increase in Q4 median scores).</p>
+                      <p className="text-sm text-gray-600">Measured ~11% QoQ improvement in median engagement, aligned with a stable weekly stickiness baseline (WAU/MAU ≈ 0.80)</p>
                     </div>
                     <div className="flex items-start">
                       <div className="h-5 w-5 rounded-full bg-blue-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
@@ -1784,7 +1784,7 @@ export default function GoogleAnalyticsCase() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                         </svg>
                       </div>
-                      <p className="text-sm text-gray-600">Developed custom engagement metrics for deeper behavioral understanding</p>
+                      <p className="text-sm text-gray-600">Blended GA session signals with in-product events, standardized at user/session/product levels, and forwarded via self-serve dashboards</p>
                     </div>
                     <div className="flex items-start">
                       <div className="h-5 w-5 rounded-full bg-green-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
