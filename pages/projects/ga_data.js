@@ -60,9 +60,9 @@ const projectDetails = {
   title: "GA / Platform Data Log Sequence Analysis",
   subtitle: "Bridging Google Analytics and Platform Data to drive product improvements",
   overview: `
-    This quantitative UX research initiative integrated Google Analytics (GA) session data with Platform Data events for a unified view of user behavior. Through behavioral data modeling, user path analysis, and custom engagement metrics, we achieved significant outcomes: user engagement scores increased by **~11% (Q4)**, and the proportion of returning daily active users grew by **~34 percentage points** (from ~28% to ~62%), indicating enhanced retention. The platform demonstrated strong user stickiness with an **~80% WAU/MAU ratio**. Furthermore, integrating data into actionable dashboards saved analysts **10+ hours weekly** in manual reporting. These insights, including identification of the main dashboard as a key Platform Data hub and dominant user interaction patterns (clicks, views, scrolls), directly informed UX improvements and product strategy.
+    This quantitative UX research initiative integrated Google Analytics (GA) session data with Platform Data events for a unified view of user behavior. Through behavioral data modeling, user path analysis, and custom engagement metrics, we achieved significant outcomes: user engagement scores increased by **~11% (Q4)**, and the proportion of returning daily active users grew by **~34 percentage points** (from ~28% to ~62%), indicating enhanced stickiness. The platform demonstrated strong user stickiness with an **~80% WAU/MAU ratio**. Furthermore, integrating data into actionable dashboards saved analysts **10+ hours weekly** in manual reporting. These insights, including identification of the main dashboard as a key Platform Data hub and dominant user interaction patterns (clicks, views, scrolls), directly informed UX improvements and product strategy.
   `,
-  problem_statement_intro: `Product and marketing teams operated with a fractured view of the user journey. Web analytics (GA) tracked in-product user behavior, while Platform Data and product databases held in-app engagement data. This separation made it nearly impossible to understand the complete user lifecycle, measure true engagement, or confidently attribute product success to specific marketing efforts.`,
+  problem_statement_intro: `Product and marketing teams operated with a fractured view of the user journey. Web analytics (GA) tracked in-product user behavior, while Platform Data and product databases held in-app engagement data. This separation made it nearly impossible to understand the complete user lifecycle, measure true engagement, or confidently attribute product success to specific development efforts.`,
   challenge_areas: [
     {
       title: "Disconnected User Journey",
@@ -77,10 +77,10 @@ const projectDetails = {
       details: "Relying on isolated metrics (e.g., GA page views vs. Platform Data activity logs) provided an incomplete picture of genuine user engagement and product stickiness."
     },
     {
-      title: "Attributing Impact Accurately",
+      title: "Low Analytics Adoption in Ops",
       iconName: "FaLink",
-      initialText: "Which efforts *actually* led to valuable user actions?",
-      details: "Difficulty in correlating  website behavior (GA) with specific in-product behaviors, feature adoption, and long-term retention (Platform Data)."
+      initialText: "Insights weren't part of weekly rhythms.",
+      details: "Dashboards weren't used in WBRs; decisions lacked data."
     }
   ],
   state_before_insight: {
@@ -91,7 +91,7 @@ const projectDetails = {
         "Inability to identify critical drop-offs across the full user lifecycle.",
         "Marketing and product strategies were often misaligned or based on incomplete data.",
         "Wasted resources on unproven initiatives or poorly prioritized features.",
-        "Limited understanding of what truly drove long-term user retention and value."
+        "Limited understanding of what truly drove long-term user stickiness and value."
       ]
     },
     research_goals: {
@@ -99,14 +99,14 @@ const projectDetails = {
       iconName: "FaLightbulb",
       points: [
         "Create a unified data model integrating GA data points and Platform Data behavioral data.",
-        "Quantify user paths, funnel conversions, and drop-off points across systems.",
+        "Quantify user paths, sequence conversions, and drop-off points across systems.",
         "Develop holistic engagement metrics reflecting true product interaction.",
         "Enable data-driven decisions for UX, product, and marketing strategies."
       ]
     }
   },
   challenge_quote: {
-    text: "We\'re flying blind in the middle. We see what happens before they sign up and after they\'re deep in the product, but the critical connections between are a black box.",
+    text: "We lack visibility into user behavior. Stakeholders struggle to find the right data, and even when they do, it’s hard to turn it into actionable insights.",
     source: "VP of Product"
   },
   challenge_conclusion: {
@@ -116,28 +116,28 @@ const projectDetails = {
   duration: "Q1 2024 - Q2 2025",
   team: ["UX Researcher (Me)","Senior Product Manager", "Product Manager", "Data Scientist", "UXR Manager", "VP of Product"],
   myRole: `
-    As the Lead UX Researcher, I spearheaded the strategy for integrating Google Analytics and Platform Data. I led the analysis of user behavior, including user path analyses, custom metric development, and cohort analysis, to identify key pains and opportunities. My work in designing actionable dashboards and delivering data-driven recommendations directly supported product roadmap prioritization and UX enhancements.
+    As the Lead UX Researcher, I spearheaded the strategy for integrating Google Analytics and Platform Data. I led the analysis of user behavior, including user path analyses, custom metric development, and cohort analysis, to identify key pains and opportunities. My work in designing actionable dashboards and delivering data-driven recommendations directly supported product roadmap prioritization and Weekly Business Reviews (WBRs).
   `,
   
   research_question_categories: [
     {
       title: "Understanding User Navigation & Interaction",
       iconName: "FaSitemap", 
-      objective: "To map and analyze how users move through and interact with integrated GA and Platform Data/features.",
+      objective: "To map and analyze how users move through and interact with integrated GA and Platform Data/Features.",
       questions: [
-        "How do users navigate between Platform Data and platform features?",
-        "What session behaviors (e.g., page sequences, time on page, clicks) indicate areas of friction or high value within the integrated data environment?",
+        "How can we connect and understand the user journey between Google Analytics and Platform features? What metrics are important to track?",
+        "What do session behaviors (e.g., page views, page sequences, time on page, clicks, technology used) look like numerically and which of them indicate areas of friction or high value within the integrated data environment?",
         "Which specific user roles (identified via Platform Data) show the highest engagement with particular platform features (tracked via GA)?"
       ]
     },
     {
-      title: "Measuring & Predicting Engagement",
+      title: "Measuring (& Predicting) Engagement",
       iconName: "FaChartLine", 
-      objective: "To define, measure, and predict user engagement and satisfaction based on combined data.",
+      objective: "To define, measure, and predict user engagement and stickiness based on combined data.",
       questions: [
-        "How can we develop a robust metric for 'product stickiness' that leverages both GA session data and Platform Data activity across different user segments?",
-        "What quantifiable correlations exist between specific Platform Data lifecycle events (e.g., onboarding completion, support ticket resolution) and overall user satisfaction or engagement patterns observed in GA?",
-        "Based on current cross-platform usage patterns (GA & Platform Data), can we build a model to predict future user engagement, potential churn, or likelihood of upselling?"
+        "How should we define and track engagement across user/user cohorts (Platform Data) using GA session signals (frequency, depth) and in-product activity (events)?",
+        "What are our stickiness baselines (DAU/MAU, WAU/MAU, DAU/WAU), and where are the key drop-offs?",
+        "Based on current cross-platform usage patterns (GA & Platform Data), can we build a model to predict future user engagement, stickiness, and potential churn?"
       ]
     }
   ],
@@ -145,7 +145,7 @@ const projectDetails = {
   research_questions_conclusion: {
     title: "Guiding Methodological Choices for Integrated Insights",
     iconName: "FaLink", 
-    text: "These research questions were fundamental in guiding our methodological choices. They necessitated an approach centered on data integration (Behavioral Data Modeling), pathway analysis (User Path & Funnel Analysis), nuanced engagement measurement (Custom Engagement Metric Development), and longitudinal tracking (Cohort-Based Analysis) to provide a truly holistic view of user behavior across systems."
+    text: "These research questions were fundamental in guiding our methodological choices. They necessitated an approach centered on data integration (Behavioral Data Modeling), pathway analysis (User Path & Sequence Analysis), nuanced engagement measurement (Custom Engagement Metric Development), and longitudinal tracking to provide a truly holistic view of user behavior across systems."
   },
   
   methods: [
@@ -162,8 +162,8 @@ const projectDetails = {
       description: "Developed and validated custom engagement scores by algorithmically weighting session duration, feature interactions, and key Platform Data event completions to quantify user involvement and platform stickiness."
     },
     {
-      name: "Cohort-Based Retention & Stickiness Analysis",
-      description: "Conducted cohort analysis on key user segments to measure product stickiness (e.g., DAU/MAU ratios) and track long-term retention trends, identifying factors influencing sustained usage."
+      name: "Stickiness Ratio Analysis",
+      description: "Measured DAU/WAU and WAU/MAU stickiness ratios and their trends, revealing return frequency patterns by role and cohort and linking them to engagement."
     }
   ],
   
@@ -171,7 +171,7 @@ const projectDetails = {
     "Unified Cross-Platform View: Successfully integrating GA behavioral logs with Platform Data events provided the first-ever complete view of user journeys across marketing touchpoints and in-product interactions, revealing previously hidden behavioral correlations.",
     "Critical Funnel Drop-off Identified: User Path Analysis quantitatively mapped navigation flows, pinpointing a critical 60% drop-off rate in the feature activation funnel between 'Account Setup' and 'First Key Action', highlighting a major UX friction point.",
     "Nuanced Engagement Measurement: Custom-developed engagement scores (weighting duration, feature interaction, Platform Data events) provided a significantly more accurate measure of true user involvement than simple metrics like page views, identifying 'power users' vs. 'at-risk' segments.",
-    "Predictive Retention Insights: Cohort analysis using integrated data revealed that users completing specific Platform Data events within their first week had a 35% higher 90-day retention rate, providing a strong leading indicator for long-term stickiness.",
+    "Predictive Stickiness Insights: Cohort analysis using integrated data revealed that users completing specific Platform Data events within their first week had a 35% higher 90-day stickiness rate, providing a strong leading indicator for long-term product use.",
     "Role-Based Behavior Differences: Analysis showed distinct platform usage patterns based on user roles defined in the Platform Data; 'Manager' roles focused heavily on reporting features, while 'Analyst' roles had higher interaction rates with data export tools.",
     "Validated Data Model for Scalability: The rigorous SQL metric building and data validation process established a robust and trustworthy unified data model, enabling reliable and scalable analytics across the organization."
   ],
@@ -226,7 +226,7 @@ const projectDetails = {
       "Dashboard as Central Hub for Platform Data Tasks: ~49% of Platform Data sequences initiated from and ~42% returning to the main dashboard, highlighting its critical workflow role."
     ],
     business_outcomes: [
-      "Data-Driven Product Roadmap: Shifted roadmap prioritization towards features demonstrably impacting user engagement and retention, backed by unified quantitative data.",
+      "Data-Driven Product Roadmap: Shifted roadmap prioritization towards features demonstrably impacting user engagement and stickiness, backed by unified quantitative data.",
       "Improved User Experience: Identified key user pathways (like the dashboard\'s central role in Platform Data sequences) and dominant interaction patterns, leading to targeted UX enhancements.",
       "Targeted Feature Development: Enabled role-specific feature enhancements based on observed behavioral differences between user segments.",
       "Foundation for Predictive Analytics: Established a validated, integrated dataset enabling future development of predictive models for churn, engagement, and LTV."
@@ -266,7 +266,7 @@ const projectDetails = {
       points: [
         "Shows how many users are new vs. returning each month/week.",
         "Compare peaks and dips to evaluate onboarding success and sustained engagement.",
-        "Drives retention strategies and reveals stable vs. slowing user growth.",
+        "Informs stickiness strategies and reveals stable vs. slowing user growth.",
       ],
     },
     {
@@ -311,7 +311,7 @@ const projectDetails = {
       points: [
         "Displays DAU/MAU ratios to measure return frequency.",
         "Weekend or holiday dips usually indicate normal usage patterns.",
-        "Stronger retention is shown by a consistently higher ratio.",
+        "Stronger stickiness is shown by a consistently higher ratio.",
       ],
     },
     {
@@ -511,7 +511,7 @@ export default function GoogleAnalyticsCase() {
       title: "SQL Metric Building & Data Validation",
       description: "Developed new metrics by joining GA and Platform Data using SQL, and rigorously validated the accuracy and consistency of this integrated data.",
       insights: [
-        "Wrote and optimized SQL queries (e.g., in BigQuery/Snowflake) to join Google Analytics session data with Platform Data event data, creating new composite metrics.",
+        "Wrote and optimized SQL queries (e.g., in SQL Studio/Snowflake) to join Google Analytics session data with Platform Data event data, creating new composite metrics.",
         "Implemented automated data validation scripts and manual review processes to ensure the accuracy, consistency, and integrity of the integrated dataset.",
         "Conducted User Acceptance Testing (UAT) sessions with data scientists and Product Managers on the newly built metrics and underlying data."
       ]
@@ -529,7 +529,7 @@ export default function GoogleAnalyticsCase() {
       title: "Dashboard Design & Deployment",
       description: "Designed, developed, and deployed interactive dashboards to provide PMs with ongoing access to key metrics and actionable insights.",
       insights: [
-        "Designed user-friendly, interactive dashboard mockups (e.g., in Looker Studio/Power BI) focusing on clear visualization of key insights and KPIs.",
+        "Designed user-friendly, interactive dashboard mockups (Power BI) focusing on clear visualization of key insights and KPIs.",
         "Iteratively developed and refined dashboards based on Product Manager feedback, usability testing, and evolving business requirements.",
         "Deployed the finalized dashboards and conducted training sessions to empower PMs to use them effectively for data-driven decision-making."
       ]
@@ -999,7 +999,7 @@ export default function GoogleAnalyticsCase() {
                 
                 <div className="bg-blue-50 p-3 rounded-md mb-3">
                   <p className="text-xs text-gray-700">
-                    <span className="font-medium text-blue-700">What this means:</span> Connected GA web logs and Platform Data user actions into one model. This provided a full user story, linking marketing campaigns (GA) to feature adoption (Platform Data).
+                    <span className="font-medium text-blue-700">What this means:</span> Connected GA web logs and Platform Data user actions into one model. This provided a full user story, normalizing GA hits and platform events into one schema so we can sequence web actions and in-product events for the same user.
                   </p>
                 </div>
                 
@@ -1031,18 +1031,18 @@ export default function GoogleAnalyticsCase() {
                     <FaSitemap size={24} className="text-green-500" />
                   </div>
                   <div>
-                    <h3 className="text-md font-semibold text-gray-800">User Path & Funnel Analysis</h3>
+                    <h3 className="text-md font-semibold text-gray-800">User Path & Sequence Analysis</h3>
                     <p className="text-xs text-gray-500">Mapping user journeys and identifying drop-offs</p>
                   </div>
                 </div>
                 
                 <p className="text-gray-600 text-sm mb-3 flex-grow">
-                  Quantitatively mapped common user navigation paths and conversion funnels by analyzing sequences of page views and Platform Data events to identify high-traffic routes, critical drop-off points, and areas of friction.
+                  Quantitatively mapped common user navigation paths by analyzing sequences of page views and Platform Data events to identify high-traffic routes, critical drop-off points, and areas of friction.
                 </p>
                 
                 <div className="bg-green-50 p-3 rounded-md mb-3">
                   <p className="text-xs text-gray-700">
-                    <span className="font-medium text-green-700">What this means:</span> Tracked user steps from landing page to conversion, visualizing pathways and identifying funnel drop-offs (e.g., a 60% drop at one stage) to prioritize UX fixes.
+                    <span className="font-medium text-green-700">What this means:</span> Tracked user steps from landing page to conversion or other key events, locating pathways and identifying drop-offs (e.g., a 60% drop at one stage) to prioritize UX fixes.
                   </p>
                 </div>
                 
@@ -1103,7 +1103,7 @@ export default function GoogleAnalyticsCase() {
                 </div>
               </motion.div>
               
-              {/* Method 4: Cohort-Based Retention & Stickiness Analysis */}
+              {/* Method 4: Stickiness Ratio Analysis */}
               <motion.div 
                 className="bg-white p-4 rounded-lg shadow-md border-l-4 border-amber-500 h-full flex flex-col"
                 whileHover={{ y: -3, boxShadow: "0 10px 25px -5px rgba(245, 159, 64, 0.15)" }}
@@ -1114,39 +1114,38 @@ export default function GoogleAnalyticsCase() {
                     <FaChartLine size={24} className="text-amber-500" /> {/* Using FaChartLine as a general analysis icon */}
                   </div>
                   <div>
-                    <h3 className="text-md font-semibold text-gray-800">Cohort-Based Retention & Stickiness Analysis</h3>
-                    <p className="text-xs text-gray-500">Tracking user groups\' long-term engagement</p>
+                    <h3 className="text-md font-semibold text-gray-800">Stickiness Ratio Analysis</h3>
+                    <p className="text-xs text-gray-500">DAU/WAU and WAU/MAU trends by segment</p>
                   </div>
                 </div>
                 
                 <p className="text-gray-600 text-sm mb-3 flex-grow">
-                  Conducted cohort analysis on key user segments to measure product stickiness (e.g., DAU/MAU ratios) and track long-term retention trends, identifying factors influencing sustained usage.
+                  Quantified stickiness using DAU/WAU and WAU/MAU ratios, segmented by role and cohort, to understand how often users return and where habits strengthen or fade.
                 </p>
                 
                 <div className="bg-amber-50 p-3 rounded-md mb-3">
                   <p className="text-xs text-gray-700">
-                    <span className="font-medium text-amber-700">What this means:</span> Grouped users by start date (cohorts) and analyzed their activity over time. This showed retention and stickiness (DAU/MAU), revealing long-term UX impact and that specific Platform Data events boosted 90-day retention by 35%.
+                    <span className="font-medium text-amber-700">What this means:</span> Stickiness ratios show how frequently users come back within weeks and months, helping us spot segments with strong habits and those at risk.
                   </p>
                 </div>
                 
-                {/* Mini visualization placeholder */}
+                {/* Mini visualization: Inline stickiness spark chart */}
                 <div className="pt-2 mt-auto border-t border-gray-100">
-                  <div className="flex flex-col items-center justify-center h-16 text-xs text-gray-500">
-                    <div className="w-full max-w-[150px] space-y-1">
-                      <div className="flex items-center text-xs">
-                        <span className="w-10 text-gray-500">Wk 1:</span>
-                        <div className="flex-1 bg-gray-200 rounded-full h-2.5 shadow-inner"><div className="bg-amber-300 h-2.5 rounded-full" style={{ width: '90%' }}></div></div>
-                      </div>
-                      <div className="flex items-center text-xs">
-                        <span className="w-10 text-gray-500">Wk 4:</span>
-                        <div className="flex-1 bg-gray-200 rounded-full h-2.5 shadow-inner"><div className="bg-amber-400 h-2.5 rounded-full" style={{ width: '70%' }}></div></div>
-                      </div>
-                      <div className="flex items-center text-xs">
-                        <span className="w-10 text-gray-500">Wk 12:</span>
-                        <div className="flex-1 bg-gray-200 rounded-full h-2.5 shadow-inner"><div className="bg-amber-500 h-2.5 rounded-full" style={{ width: '55%' }}></div></div> {/* Representing 35% higher retention might be more abstract, showing overall decline */}
-                      </div>
+                  <div className="flex flex-col items-center justify-center h-28">
+                    <svg viewBox="0 0 240 80" className="w-[240px] h-[80px]">
+                      {/* grid lines */}
+                      <line x1="0" y1="60" x2="240" y2="60" stroke="#e5e7eb" strokeWidth="1" />
+                      <line x1="0" y1="40" x2="240" y2="40" stroke="#e5e7eb" strokeWidth="1" />
+                      <line x1="0" y1="20" x2="240" y2="20" stroke="#e5e7eb" strokeWidth="1" />
+                      {/* WAU/MAU (higher) */}
+                      <polyline points="0,35 40,33 80,32 120,31 160,30 200,28 240,27" fill="none" stroke="#f59e0b" strokeWidth="2.5" />
+                      {/* DAU/WAU (lower) */}
+                      <polyline points="0,55 40,53 80,52 120,50 160,49 200,48 240,47" fill="none" stroke="#6366f1" strokeWidth="2.5" />
+                    </svg>
+                    <div className="mt-1 flex items-center gap-4 text-[10px] text-gray-500">
+                      <span className="flex items-center gap-1"><span className="inline-block w-2 h-2 rounded-sm bg-amber-500"></span>WAU/MAU</span>
+                      <span className="flex items-center gap-1"><span className="inline-block w-2 h-2 rounded-sm bg-indigo-500"></span>DAU/WAU</span>
                     </div>
-                    <p className="text-xs text-center text-gray-400 mt-1">Cohort Retention Over Time</p>
                   </div>
                 </div>
               </motion.div>
@@ -1408,16 +1407,16 @@ export default function GoogleAnalyticsCase() {
                 <div className="h-1.5 bg-blue-500 w-full"></div>
                 <div className="p-4">
                   <div className="flex justify-between items-center mb-1">
-                    <span className="text-sm font-medium text-gray-500">User Stickiness</span>
+                    <span className="text-sm font-medium text-gray-500">Engagement Growth</span>
                     <span className="flex items-center text-blue-500">
                       <FaBullseye className="h-4 w-4" />
                     </span>
                   </div>
                   <div className="flex items-baseline mt-1">
-                    <span className="text-3xl font-bold text-blue-600">~80</span>
+                    <span className="text-3xl font-bold text-blue-600">+11</span>
                     <span className="text-blue-400 ml-1">%</span>
                   </div>
-                  <div className="text-xs text-gray-500 mt-1">of monthly users active weekly</div>
+                  <div className="text-xs text-gray-500 mt-1">in median session scores (Q4)</div>
                 </div>
               </motion.div>
               
@@ -1429,16 +1428,16 @@ export default function GoogleAnalyticsCase() {
                 <div className="h-1.5 bg-green-500 w-full"></div>
                 <div className="p-4">
                   <div className="flex justify-between items-center mb-1">
-                    <span className="text-sm font-medium text-gray-500">Engagement Growth</span>
+                    <span className="text-sm font-medium text-gray-500">User Stickiness</span>
                     <span className="flex items-center text-green-500">
                       <FaChartLine className="h-4 w-4" />
                     </span>
                   </div>
                   <div className="flex items-baseline mt-1">
-                    <span className="text-3xl font-bold text-green-600">+11</span>
+                    <span className="text-3xl font-bold text-green-600">~80</span>
                     <span className="text-green-400 ml-1">%</span>
                   </div>
-                  <div className="text-xs text-gray-500 mt-1">in median session scores (Q4)</div>
+                  <div className="text-xs text-gray-500 mt-1">of monthly users active weekly</div>
                 </div>
               </motion.div>
               
@@ -1471,7 +1470,7 @@ export default function GoogleAnalyticsCase() {
                 <div className="h-1.5 bg-amber-500 w-full"></div>
                 <div className="p-4">
                   <div className="flex justify-between items-center mb-1">
-                    <span className="text-sm font-medium text-gray-500">Analyst Time Saved</span>
+                    <span className="text-sm font-medium text-gray-500">Analysis Time Saved</span>
                     <span className="flex items-center text-amber-500">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -1650,7 +1649,7 @@ export default function GoogleAnalyticsCase() {
                 </h3>
                 
                 <p className="text-sm text-gray-600 mb-2">
-                  Integrating multiple data systems into a unified dashboard saved analysts <span className="font-medium text-amber-600">10+ hours weekly</span> by eliminating manual report compilation from disparate sources. This streamlined workflow significantly boosted efficiency and contributed to <span className="font-medium text-amber-600">$312,000 in annual operational savings</span>.
+                  Integrating multiple data systems into a unified dashboard saved analysts <span className="font-medium text-amber-600">10+ hours weekly</span> by eliminating manual report compilation from disparate sources. This streamlined workflow significantly boosted pragmatic data analyses.
                 </p>
                 
                 {/* Before/After diagram */}
@@ -1785,7 +1784,7 @@ export default function GoogleAnalyticsCase() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                         </svg>
                       </div>
-                      <p className="text-sm text-gray-600">Redesigned user flows based on behavioral analytics</p>
+                      <p className="text-sm text-gray-600">Developed custom engagement metrics for deeper behavioral understanding</p>
                     </div>
                     <div className="flex items-start">
                       <div className="h-5 w-5 rounded-full bg-green-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
@@ -1793,7 +1792,7 @@ export default function GoogleAnalyticsCase() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                         </svg>
                       </div>
-                      <p className="text-sm text-gray-600">Developed custom engagement metrics for deeper behavioral understanding.</p>
+                      <p className="text-sm text-gray-600">Redesigned user flows based on behavioral analytics</p>
                     </div>
                     <div className="flex items-start">
                       <div className="h-5 w-5 rounded-full bg-green-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
@@ -1862,29 +1861,14 @@ export default function GoogleAnalyticsCase() {
               className="mb-4"
             >
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {/* Card 1: Strengthened User Retention */}
+                {/* Card 1: Elevated Engagement */}
                 <div className="bg-white p-4 rounded-lg shadow-sm border-t-4 border-blue-400">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-lg font-bold text-gray-800">Strengthened User Retention</h3>
+                    <h3 className="text-lg font-bold text-gray-800">Elevated Engagement</h3>
                     <FaUsers className="h-6 w-6 text-blue-500" />
                   </div>
                   <div className="flex items-end mb-2">
-                    <span className="text-3xl font-bold text-blue-600">~+34pt</span>
-                    <span className="text-sm text-gray-500 ml-2 mb-1">Growth in Returning Daily Users</span>
-                  </div>
-                  <p className="text-sm text-gray-600">
-                    The proportion of daily active users who were returning users grew significantly from ~28% to ~62% over Q4.
-                  </p>
-                </div>
-                
-                {/* Card 2: Elevated Platform Engagement */}
-                <div className="bg-white p-4 rounded-lg shadow-sm border-t-4 border-teal-400">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-lg font-bold text-gray-800">Elevated Platform Engagement</h3>
-                    <FaChartLine className="h-6 w-6 text-teal-500" />
-                  </div>
-                  <div className="flex items-end mb-2">
-                    <span className="text-3xl font-bold text-teal-600">~+11%</span>
+                    <span className="text-3xl font-bold text-blue-600">~+11%</span>
                     <span className="text-sm text-gray-500 ml-2 mb-1">Median Session Score Increase</span>
                   </div>
                   <p className="text-sm text-gray-600">
@@ -1892,20 +1876,35 @@ export default function GoogleAnalyticsCase() {
                   </p>
                 </div>
                 
-                {/* Card 3: Time Efficiency Card Updated (Remains as is from previous step) */}
-                <div className="bg-white p-4 rounded-lg shadow-sm border-t-4 border-amber-400">
+                {/* Card 2: Time Efficiency */}
+                <div className="bg-white p-4 rounded-lg shadow-sm border-t-4 border-teal-400">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-bold text-gray-800">Time Efficiency</h3>
+                    <FaChartLine className="h-6 w-6 text-teal-500" />
+                  </div>
+                  <div className="flex items-end mb-2">
+                    <span className="text-3xl font-bold text-teal-600">10+ hrs</span>
+                    <span className="text-sm text-gray-500 ml-2 mb-1">saved weekly</span>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    By analysts due to unified dashboard, eliminating manual data compilation.
+                  </p>
+                </div>
+                
+                {/* Card 3: WBR Dashboard */}
+                <div className="bg-white p-4 rounded-lg shadow-sm border-t-4 border-amber-400">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-lg font-bold text-gray-800">WBR Dashboard </h3>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <div className="flex items-end mb-2">
-                    <span className="text-3xl font-bold text-amber-600">10+ hrs</span>
-                    <span className="text-sm text-gray-500 ml-2 mb-1">saved weekly</span>
+                    <span className="text-3xl font-bold text-amber-600">90%+</span>
+                    <span className="text-sm text-gray-500 ml-2 mb-1">Dashboard Adoption</span>
                   </div>
                   <p className="text-sm text-gray-600">
-                    By analysts due to unified dashboard, eliminating manual data compilation.
+                    Over 90% of the Product teams adopted their respective dashboard for their Weekly Business Reviews (WBRs).
                   </p>
                 </div>
               </div>
@@ -1944,7 +1943,7 @@ export default function GoogleAnalyticsCase() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                           </svg>
                         </div>
-                        <p className="text-sm text-gray-600">Data silos between marketing and product teams</p>
+                        <p className="text-sm text-gray-600">Data silos between data, engineering and product teams</p>
                       </li>
                       <li className="flex items-start">
                         <div className="h-5 w-5 rounded-full bg-red-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
@@ -1952,7 +1951,7 @@ export default function GoogleAnalyticsCase() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                           </svg>
                         </div>
-                        <p className="text-sm text-gray-600">Only 19% of decisions backed by user data</p>
+                        <p className="text-sm text-gray-600">Very low percentage of decisions backed by user data</p>
                       </li>
                 </ul>
               </div>
@@ -1971,7 +1970,7 @@ export default function GoogleAnalyticsCase() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
                         </div>
-                        <p className="text-sm text-gray-600">93% of analytics work automated through dashboards</p>
+                        <p className="text-sm text-gray-600">Majority of analytics work automated through dashboards</p>
                     </li>
                       <li className="flex items-start">
                         <div className="h-5 w-5 rounded-full bg-green-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
@@ -1979,7 +1978,7 @@ export default function GoogleAnalyticsCase() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
                         </div>
-                        <p className="text-sm text-gray-600">Unified data platform accessible to all teams</p>
+                        <p className="text-sm text-gray-600">Unified data platform accessible to all teams and stakeholders</p>
                       </li>
                       <li className="flex items-start">
                         <div className="h-5 w-5 rounded-full bg-green-100 flex-shrink-0 flex items-center justify-center mr-2 mt-0.5">
@@ -1987,7 +1986,7 @@ export default function GoogleAnalyticsCase() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
                         </div>
-                        <p className="text-sm text-gray-600">87% of key decisions now data-informed</p>
+                        <p className="text-sm text-gray-600">Zero key decisions made without the backing of data</p>
                       </li>
                 </ul>
                   </div>
