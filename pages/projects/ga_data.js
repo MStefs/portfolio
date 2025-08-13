@@ -158,11 +158,11 @@ const projectDetails = {
       description: "Designed a unified data model integrating Google Analytics behavioral logs with Platform Data events, enabling comprehensive analysis of cross-platform user journeys and interaction patterns."
     },
     {
-      name: "User Path & Funnel Analysis",
+      name: "User Path Analysis",
       description: "Quantitatively mapped common user navigation paths and conversion funnels by analyzing sequences of page views and Platform Data events to identify high-traffic routes, critical drop-off points, and areas of friction."
     },
     {
-      name: "Custom Engagement Metric Development",
+      name: "Engagement Metric Development",
       description: "Developed and validated custom engagement scores by algorithmically weighting session duration, feature interactions, and key Platform Data event completions to quantify user involvement and platform stickiness."
     },
     {
