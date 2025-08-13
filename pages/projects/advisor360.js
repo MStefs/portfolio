@@ -603,7 +603,7 @@ const projectDetails = {
   overview: `
     This quantitative UX research initiative addressed fragmented voice-of-customer data by delivering a feedback intelligence dashboard. Across 18,5k+ submissions (2020–2025), we combined user interviews, textual analysis, descriptive statistics, time series analysis, user segmentation, ML-driven sentiment, and CSAT surveys. The dashboard centralized insight generation and operationalized prioritization: 83% reduction in manual feedback processing, 47% improvement in feature prioritization accuracy (segmentation + 19K votes), 28% faster feature time-to-market, 32% shorter development cycles, stabilized CSAT around 88–90, and a 27% uplift in overall user sentiment.
   `,
-  problem_statement_intro: "Advisor360 faced a significant operational hurdle: user feedback, a goldmine of insights, was scattered across numerous channels—emails, support tickets, survey responses, and various internal systems. This disorganization made it nearly impossible to get a clear, holistic view of user sentiment and emerging needs.",
+  problem_statement_intro: "Advisor360 faced a significant operational hurdle: user feedback, a goldmine of insights, was scattered across numerous channels—emails, support tickets, survey responses, and various internal systems. This disorganization made it nearly impossible to get a clear, holistic view of emerging needs/painpoints, user sentiment, and satisfaction.",
   challenge_areas: [
     {
       title: "Overwhelming & Siloed Feedback",
@@ -629,11 +629,13 @@ const projectDetails = {
       title: "The High Cost of Disconnected Feedback",
       iconName: "FaQuestionCircle",
       points: [
-        "Inability to accurately gauge user satisfaction or the impact of product changes.",
-        "Product roadmap decisions were often based on assumptions or the loudest voices, not comprehensive data.",
-        "Missed opportunities to proactively address user pain points or capitalize on positive trends.",
         "Significant Team time consumed by manual feedback processing.",
-        "Delays in product decisions due to lack of timely feedback insights."
+        "Delays in product decisions due to lack of timely feedback insights.",
+        "Missed opportunities to proactively address user pain points or capitalize on positive trends.",
+        "Inability to accurately gauge user satisfaction or the impact of product changes.",
+        "Product roadmap decisions were often based on assumptions or the loudest voices, not comprehensive data, costin effort and resources."
+        
+        
       ]
     },
     research_goals: {
@@ -641,10 +643,10 @@ const projectDetails = {
       iconName: "FaLightbulb",
       points: [
         "Create a centralized, single source of truth for all user feedback.",
-        "Implement automated sentiment analysis and trend identification.",
         "Develop an interactive dashboard for Stakeholders to easily explore and understand feedback data.",
-        "Provide an overall CSAT metric for Stakeholders to track the impact of their product decisions, and compare that to the overall CSAT of other company products and services.",
-        "Drastically reduce manual effort and empower data-driven prioritization."
+        "Drastically reduce manual effort and empower data-driven prioritization.",
+        "Implement automated feedback sentiment analysis and trend identification.",
+        "Provide an overall CSAT metric for Stakeholders to track the impact of their product decisions, and compare that to the overall CSAT of other company products and services."
       ]
     }
   },
