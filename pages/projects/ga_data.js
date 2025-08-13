@@ -125,7 +125,7 @@ const projectDetails = {
       iconName: "FaSitemap", 
       objective: "To map and analyze how users move through and interact with integrated GA and Platform Data/Features.",
       questions: [
-        "How can we connect and understand the user journey between Google Analytics and Platform features? What metrics are important to track?",
+        "How can we connect and understand the user journey between Google Analytics and Platform features? What KPIs/metrics are important to introduce and track?",
         "Across GA + Platform data, what do sessions look like by the numbers (pages, paths, time, events, tech), and which patterns clearly indicate friction or high-value moments?",
         "Which specific user roles (identified via Platform Data) show the highest engagement with particular platform features (tracked via GA)?"
       ]
